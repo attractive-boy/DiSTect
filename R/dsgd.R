@@ -66,7 +66,7 @@ library(rstan)
 autologistic_model<-stan_model(model_code = stan_program)
 
 if (method == "VI"){
-  fit <- vb(autologistic_model,data = stan_data, algorithm = "fullrank", seed = 128, tol_rel_obj = 0.00001)
+  fit <- vb(autologistic_model,data = stan_data, algorithm = "fullrank", seed = 128, iter = 3000, tol_rel_obj = 0.00001)
   } else if (method == "NUTS") {
     fit <- sampling(
       object = autologistic_model,
@@ -155,7 +155,7 @@ stan_data <- list(
 autologistic_model<-stan_model(model_code = stan_program)
 
 if (method=="VI"){
-  fit <- vb(autologistic_model,data = stan_data, algorithm = "fullrank", seed = 128, tol_rel_obj = 0.00001)
+  fit <- vb(autologistic_model,data = stan_data, algorithm = "fullrank", seed = 128, iter = 3000, tol_rel_obj = 0.00001)
   } else if (method=="NUTS") {
     fit <- sampling(
       object = autologistic_model,
