@@ -1,0 +1,5 @@
+# verification kit: commit only the orchestrator + report; logs are machine-specific
+*
+!.gitignore
+!run_verify.sh
+!REPORT.md
