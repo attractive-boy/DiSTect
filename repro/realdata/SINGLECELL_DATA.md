@@ -17,10 +17,31 @@ DATA_RDS=mydata.rds Rscript repro/realdata/run_singlecell.R
 ## Recommended public datasets (match the paper's platforms)
 | dataset | platform | disease | source |
 |---|---|---|---|
-| Human Breast Cancer | 10x **Xenium** | breast tumor vs normal | 10x Genomics datasets portal |
-| Mouse AD (13-mo) | **STARmap PLUS** | Alzheimer amyloid proximity | Zeng et al. 2023 (GSE194329) |
+| Human Breast Cancer | 10x **Xenium** | breast tumor vs normal | 10x Genomics portal — **✅ scripted & verified**, see below |
+| Mouse AD (13-mo) | **STARmap PLUS** | Alzheimer amyloid proximity | Broad Single Cell Portal **SCP1375** (Zeng et al., *Nat Neurosci* 2023); **sign-in required** |
 | Mouse/Human brain | **MERFISH** | AD / control | Vizgen / Allen Brain |
 | Colorectal / Breast | **Visium HD** (8µm) | tumor region | 10x Genomics datasets portal |
+
+> ⚠️ **Correction:** an earlier version of this table cited **GSE194329** for the STARmap+ AD data.
+> That accession is a *different* study (Visium of pediatric DMG/GBM brain tumors) and is **not** the
+> Alzheimer's STARmap+ dataset. The STARmap+ AD data is distributed via the Broad Single Cell Portal
+> (SCP1375) and a restricted Zenodo record (5842625) — not GEO, and both require access.
+
+## Ready-to-run: 10x Xenium Human Breast Cancer (verified end-to-end)
+Single-cell-resolution imaging spatial data (Janesick et al., *Nat Commun* 2023; CC BY 4.0) —
+167,780 cells at low depth, the regime the original O(N²) log-Gaussian model cannot fit.
+```bash
+bash   repro/realdata/fetch_xenium_breast.sh          # ~118 MB (skips the 9.4 GB full bundle)
+HVG=50 Rscript repro/realdata/make_xenium_rds.R       # -> /tmp/xenium_breast/..._hvg50.rds
+DATA_RDS=/tmp/xenium_breast/xenium_breast_rep1_hvg50.rds Rscript repro/realdata/run_singlecell.R
+# -> 167,780 cells x 50 genes fit in ~100s; 42 genes @FDR 0.05; EPCAM/CDH1/KRT8/FASN/TACSTD2/...
+```
+- `make_xenium_rds.R` keeps the full 313-gene panel by default; set `HVG=K` — the fit is
+  **O(N·P²)/iter**, so the full panel hangs at N=1.7e5 (as the README warns: reduce HVGs).
+- **Disease label:** the default is a self-contained tumor-epithelial **marker-score proxy** (partly
+  circular — it uses epithelial markers that are also covariates). For a headline biological result,
+  pass `LABEL_CSV=<csv: cell_id,label>` with the Janesick supervised annotation (DCIS / invasive
+  tumor → 1); the hook is built into `make_xenium_rds.R`.
 
 ## Disease-label construction
 - Pathology annotations → cancer vs non-cancer (as in her2st).

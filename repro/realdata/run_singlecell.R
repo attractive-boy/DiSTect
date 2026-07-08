@@ -42,7 +42,7 @@ cat(sprintf("  %d cells x %d genes | %.0f%% disease | mean count %.2f, %.0f%% ze
 ## NB covariates + PG-CAVI at single-cell scale
 X <- scale(nb_pearson(counts)); X[is.na(X)]<-0
 t <- system.time(fit <- fit_pgcavi_single(y, X, coords=coords))["elapsed"]
-gt <- fit$table[grepl("gene",fit$table$param), ]
+gt <- fit$table[!fit$table$param %in% c("intercept","eta"), ]  # gene rows (works for real symbols)
 sel <- select_fdr_z(gt$std_effect, level=0.05)
 cat(sprintf("\n== PG-CAVI at single-cell scale: %d cells fit in %.1fs, %d iters ==\n",
             nrow(counts), t, fit$iter))
