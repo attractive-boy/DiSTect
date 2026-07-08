@@ -35,7 +35,11 @@ coords <- as.matrix(cells[, c("x_centroid", "y_centroid")])
 LABEL_CSV <- Sys.getenv("LABEL_CSV", "")
 if (nzchar(LABEL_CSV) && file.exists(LABEL_CSV)) {
   lab <- read.csv(LABEL_CSV); rownames(lab) <- as.character(lab[[1]])
-  disease <- as.integer(lab[colnames(mat), 2] %in% c(1, "1", TRUE, "tumor", "DCIS", "Invasive_Tumor"))
+  ct  <- as.character(lab[colnames(mat), 2])                        # cell-type per cell (aligned)
+  # tumor cell types -> disease=1 (Janesick supervised: DCIS #1/#2, Invasive Tumor, Prolif Inv Tumor)
+  disease <- as.integer(grepl("DCIS|Invasive|Tumou?r|Carcinoma", ct, ignore.case = TRUE) |
+                          ct %in% c("1", "tumor", "TRUE"))
+  disease[is.na(disease)] <- 0L
   cat(sprintf("disease: supervised annotation %s -> %.0f%% disease=1\n", LABEL_CSV, 100*mean(disease)))
 } else {
   markers <- intersect(c("ERBB2","EPCAM","KRT8","KRT18","FASN","ELF3","CDH1","TACSTD2"), rownames(mat))

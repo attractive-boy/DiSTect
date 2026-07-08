@@ -38,10 +38,28 @@ DATA_RDS=/tmp/xenium_breast/xenium_breast_rep1_hvg50.rds Rscript repro/realdata/
 ```
 - `make_xenium_rds.R` keeps the full 313-gene panel by default; set `HVG=K` — the fit is
   **O(N·P²)/iter**, so the full panel hangs at N=1.7e5 (as the README warns: reduce HVGs).
-- **Disease label:** the default is a self-contained tumor-epithelial **marker-score proxy** (partly
-  circular — it uses epithelial markers that are also covariates). For a headline biological result,
-  pass `LABEL_CSV=<csv: cell_id,label>` with the Janesick supervised annotation (DCIS / invasive
-  tumor → 1); the hook is built into `make_xenium_rds.R`.
+- **Disease labels — three routes** (increasing rigor, all consumed by `make_xenium_rds.R` via `LABEL_CSV`):
+
+  | route | script | circularity | fit |
+  |---|---|---|---|
+  | marker-score proxy (default) | built into `make_xenium_rds.R` | high (label ≈ covariate threshold) | eta 0.41; top EPCAM/CDH1/KRT8 |
+  | unsupervised cluster + markers | `build_xenium_labels.R` | low | eta 0.66; ↑GATA3/FOXA1, ↓PTPRC/TRAC |
+  | **gold-standard supervised** | `fetch_xenium_labels.sh` | **none (independent classifier)** | **eta 0.49, AUC 0.995** |
+
+### Gold-standard supervised labels (verified end-to-end)
+The Janesick label-transferred Xenium cell types are the paper's Supplementary Data (**MOESM4**),
+sheet **`Fig. 3e-j Xenium`** (`Barcode` = integer cell_id, `Cluster` = supervised cell type). Fetch → label → discover:
+```bash
+bash repro/realdata/fetch_xenium_labels.sh   # downloads MOESM4 xlsx, exports cell_groups.csv (167,780 cells, 38% tumor)
+LABEL_CSV=/tmp/xenium_breast/cell_groups.csv HVG=50 \
+  OUT_RDS=/tmp/xenium_breast/xenium_supervised.rds Rscript repro/realdata/make_xenium_rds.R
+DATA_RDS=/tmp/xenium_breast/xenium_supervised.rds Rscript repro/realdata/xenium_discovery_report.R
+```
+Result (167,780 cells × 50 HVG, **converged 442 iters, ~5 min**): **eta=0.485, AUC=0.995, 46/50 genes @FDR 0.05.**
+Tumor-**enriched** = luminal program (FOXA1, GATA3, MLPH, EPCAM, KRT8, FASN); tumor-**depleted** =
+CAF/stromal + immune (MMP2, POSTN, CXCL12, CCDC80, CD4) — a coherent tumor-vs-microenvironment contrast
+at single-cell resolution the original O(N²) model cannot produce. `fetch_xenium_labels.sh` needs
+`openpyxl` (auto-creates an isolated venv if absent).
 
 ## Disease-label construction
 - Pathology annotations → cancer vs non-cancer (as in her2st).
