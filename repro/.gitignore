@@ -1,0 +1,4 @@
+*.log
+.RData
+*_cache/
+.DS_Store
