@@ -115,18 +115,22 @@ triggers *premature* convergence).
 
 ## 6. What is left to make it Bioinformatics-complete
 
-1. ⏳ Run C5 on ≥1 real single-cell disease dataset (Xenium breast or STARmap+ AD) — the headline
-   generalization result. Pipeline + data guide: `realdata/run_singlecell.R`, `SINGLECELL_DATA.md`.
-2. Layer spike-and-slab onto PG-CAVI (documented hook in `fit_polyagamma.R`) for principled
-   inclusion probabilities → Bayesian FDR (`select_fdr_bayes`).
+1. ✅ **DONE** — C5 on real single-cell data: 10x Xenium breast (167,780 cells, Janesick supervised
+   labels). Converged in ~5 min, eta 0.49, AUC 0.995; recovers the tumor luminal program vs
+   CAF/immune microenvironment (`realdata/fetch_xenium_labels.sh`, `make_xenium_rds.R`,
+   `xenium_discovery_report.R`; guide `SINGLECELL_DATA.md`).
+2. ✅ **DONE** — spike-and-slab on PG-CAVI (`spike_slab=TRUE` in `fit_polyagamma.R`): closed-form
+   NMIG inclusion probabilities → Bayesian FDR (`select_fdr_bayes`). On Sim 1 it cuts the mean-field
+   z-BH FPR **0.19 → 0.00** at TPR 1.00 (`sim/sim1b_spikeslab.R`).
 3. Full latent-NB measurement model (M2 headline; residual version already shipped).
 4. Multi-slice random effects in PG-CAVI (batch adjustment) — currently pooled with patient labels.
 5. Ablations + external validation; write methods + theory (pseudolikelihood consistency, PG-CAVI
    ELBO monotonicity), assemble figures.
 
 ## 7. Honest limitations (put these in the paper, reviewers will find them otherwise)
-- Mean-field VI **under-estimates posterior variance** → slightly inflated selection (Sim1 FPR≈0.19);
-  the spike-and-slab + calibration layers address this.
+- Mean-field VI **under-estimates posterior variance** → the plain z-BH selector is liberal
+  (Sim1 FPR≈0.19). ✅ Addressed: the spike-and-slab prior + Bayesian FDR drive FPR **0.19 → 0.00** at
+  TPR 1.00 (`sim/sim1b_spikeslab.R`); prefer that route for final selection.
 - The η de-biaser is a Monte-Carlo moment-matcher: reduces but does not fully remove attenuation at
   large η; needs more MC draws / a better estimating equation.
 - Single-cell coordinates are snapped to a lattice for the rook-neighbor engine; a kd-tree
