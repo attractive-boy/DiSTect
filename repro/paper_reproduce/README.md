@@ -48,6 +48,7 @@ Rscript repro/paper_reproduce/confirm_covscale.R
 Rscript repro/paper_reproduce/crlb_vs_covscale.R
 Rscript repro/paper_reproduce/nuts_sim1_tuned.R
 Rscript repro/paper_reproduce/mcmle_autologistic.R
+Rscript repro/paper_reproduce/diagnose_uncertainty_scaling.R
 Rscript repro/paper_reproduce/make_figures.R
 ```
 

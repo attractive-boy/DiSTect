@@ -1,6 +1,18 @@
 # btaf530 stepwise reproduction status
 
-Date: 2026-07-09
+Date: 2026-07-11
+
+## UPDATE (2026-07-11): likely sqrt(200) reporting-scale error identified
+
+The strongest reconstruction of Tables C1-C3 is that `avgSEE/avgSEM` were
+divided by `sqrt(200)`, turning estimator-level uncertainty into Monte Carlo
+uncertainty for the 200-replicate average. The Table C1 NUTS eta values
+`0.021/0.022` become `0.297/0.311`, matching the independent local NUTS/GLM
+range `0.24-0.32` and restoring consistency with 95% coverage. This substantially
+resolves the first reproduction question as a likely reporting-scale issue.
+The exact source formula and the remaining ADVI numerical mismatch cannot be
+confirmed without the authors' simulation script. See
+`ETA_UNCERTAINTY_FINDING.md` and `output/uncertainty_scaling_audit.csv`.
 
 ## UPDATE (2026-07-09): eta discrepancy resolved to an uncertainty-column issue
 
