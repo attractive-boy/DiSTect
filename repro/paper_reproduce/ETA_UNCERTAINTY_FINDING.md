@@ -1,0 +1,185 @@
+# Finding: the eta uncertainty columns in Tables C1-C3 are below the information floor
+
+Date: 2026-07-09
+
+Scope: btaf530 (DiSTect) Simulation 1, parameter `eta` (spatial autocorrelation).
+This note supersedes the "eta bias" framing in `ETA_BIAS_DIAGNOSIS.md`. The
+reproducible, defensible discrepancy is not the eta point estimate (bias) but the
+reported eta **uncertainty** (avgSEE / avgSEM), which is smaller than any correct
+estimator can achieve on the stated design.
+
+## One-line conclusion
+
+On the paper's stated Simulation-1 design (30x30 lattice, 20 covariates
+`X ~ N(0,1)`, `beta = (1,2,3,-4,-5,0_15)`, 2000-sweep Gibbs, neighbor-average
+autologistic), the Cramer-Rao floor for the eta standard error is `~0.11` at any
+covariate scale. Tables C1-C3 report eta `avgSEE/avgSEM` of `~0.021` (NUTS) and
+`~0.044` (ADVI), i.e. 2.5x-5x below that floor. Separately, the reported ADVI
+row is internally inconsistent (bias `~2x` its SE, yet 95% coverage). The eta
+point estimates reproduce directionally; only the uncertainty columns do not.
+
+## Definitions (from the supplement, Section A2 preamble)
+
+- `avgBias`  = average bias over 200 replicates.
+- `avgSEE`   = average **empirical** standard error = SD of the 200 point estimates.
+- `avgSEM`   = average **model** standard error = mean of the posterior SDs.
+- `avgCR`    = coverage of the 95% posterior credible interval.
+
+The local `aggregate_sim_table` computes `avgSEE = sd(posterior means)` and
+`avgSEM = mean(posterior sd)`, matching these definitions.
+
+## Paper targets (Table C1, eta = 0.4)
+
+| method          | eta avgBias | eta avgSEE | eta avgSEM | avgCR |
+|-----------------|------------:|-----------:|-----------:|------:|
+| Proposed (NUTS) | 0.019       | 0.021      | 0.022      | 95.0% |
+| Proposed (ADVI) | 0.087       | 0.044      | 0.044      | 95.0% |
+
+## Four independent lines of evidence for the ~0.11 floor
+
+All use the paper's exact neighbor-average convention and the stated design
+unless noted. Scripts under `repro/paper_reproduce/`.
+
+1. **GLM conditional pseudolikelihood** (`diagnose_eta_bias.R`, n=200).
+   eta empirical SD `0.319 / 0.318 / 0.423` for eta `0.4 / 1.6 / 2.8`.
+   `output/eta_bias_glm_aggregate_n200.csv`.
+
+2. **Fullrank ADVI**, the paper's spike-slab model, priors per Table C7
+   (`b1=5, b2=50, c1=8, v0=1e-6`) (n=200).
+   eta avgSEE `0.245`, avgSEM `0.310` at eta 0.4.
+   `output/sim1_advi_key_comparison_n200.csv`. Meanfield ADVI is the same
+   (SEE `0.174` at xsd 0.5 vs fullrank `0.178`): the ADVI variant is not the
+   lever. `output/confirm_meanfield_aggregate_n50.csv`.
+
+3. **NUTS**, same model, `adapt_delta = 0.99` (divergence-free in 7/8 fits),
+   n=8 datasets at eta 0.4.
+   eta empirical SD `0.243`, mean posterior SD `0.257`, mean |bias| `0.223`,
+   eta_hat range `[0.25, 0.87]`. Faithful sampling (div=0) does not narrow the
+   posterior. `output/nuts_sim1_tuned.csv`.
+
+4. **Full-likelihood Monte-Carlo MLE** (Geyer-Thompson) on the proper
+   sum-convention autologistic joint (`mcmle_autologistic.R`). Across the
+   coupling strengths matching the paper's three eta settings (disease rates
+   match those of the avg-convention data), the full-likelihood SE(eta) equals
+   the pseudolikelihood SE (`SE ratio = 1.0`), including near criticality --
+   the strong covariates keep the field disordered, so MPLE does not degrade.
+   Therefore the pseudolikelihood SE already attains the Cramer-Rao bound; there
+   is no more efficient estimator to be had.
+   `output/mcmle_vs_pl_eta*.csv`.
+
+## The floor does not depend on covariate scale
+
+Reducing the covariate SD `xsd` (equivalently the linear-predictor scale) is the
+only design knob that raises eta's Fisher information. Sweeping it to zero
+(`diagnose_covariate_scale.R`, avg convention, GLM = CRLB in this regime, n=50,
+eta 0.4):
+
+| xsd  | LP sd | disease rate | eta empirical SD | eta SE (~CRLB) |
+|-----:|------:|-------------:|-----------------:|---------------:|
+| 0.25 | 1.85  | 0.53         | 0.154            | 0.147          |
+| 0.10 | 0.74  | 0.55         | 0.122            | 0.121          |
+| 0.05 | 0.37  | 0.55         | 0.132            | 0.116          |
+| 0.01 | 0.07  | 0.56         | 0.133            | 0.113          |
+
+The SE floors at `~0.11` and does not decrease further even with covariates
+essentially removed. `empirical SD ~= SE` throughout (well calibrated), so this
+is a genuine information floor, not an estimator artifact. Paper `0.044 / 0.021`
+sit `2.5x / 5.4x` below it.
+
+(The earlier CRLB sweep `crlb_vs_covscale.R` reports the same on the sum scale:
+`Var(T)` rises `212 -> 1264` as `xsd: 1 -> 0`, sum-scale SE `0.072 -> 0.028`;
+converting to the avg scale via the empirical divisor `~3.6` gives the same
+`~0.11` avg-scale floor. Mixing these two scales is what produced -- and then
+corrected -- an intermediate wrong conclusion during this investigation.)
+
+## Internal inconsistency of the reported ADVI row
+
+Independent of the floor: Table C1 Proposed (ADVI) reports `avgBias 0.087`,
+`avgSEE = avgSEM = 0.044`, `avgCR 95%`. A roughly-unbiased estimator with SD
+`0.044` gives a 95% interval of half-width `~0.086`; but the bias is `0.087 ~=
+2x` the SE, which would drive coverage to `~50%`, not 95%. Conversely, achieving
+95% coverage requires a true SD of `~0.13` -- which coincides with the `~0.11`
+Cramer-Rao floor, not with the reported `0.044`. So within the table itself, the
+SEM column and the coverage column are mutually inconsistent.
+
+## What DOES reproduce
+
+- eta point estimates are roughly unbiased on average (e.g. NUTS dataset means
+  `0.375, 0.409, 0.428` hit the truth `0.4`; GLM mean `0.44`). The reported
+  small `avgBias` is plausible; the small `avgSEE/avgSEM` is not.
+- The qualitative headline (proposed << naive signal-gene bias) reproduces: at
+  eta 0.4, naive ADVI beta5 bias `~2.1`, proposed `~0.6`.
+- Priors match Table C7 exactly.
+
+The paper's scientific conclusions rest on point estimates and their direction,
+which reproduce. The issue is confined to the numeric uncertainty columns of the
+simulation tables.
+
+## Honest caveats
+
+- The CRLB is established via the pseudolikelihood Fisher information, shown
+  equal to the full-likelihood MLE (MCMLE) only on the proper sum-convention
+  joint; the avg-convention "full likelihood" is not a clean exponential family
+  (boundary degrees vary), so the avg-scale floor is a close proxy, not an exact
+  bound. The 2.5x-5x gap far exceeds this approximation error.
+- We cannot exclude an undisclosed design difference (e.g. many more spots than
+  30x30, which would lower the floor as `1/sqrt(N)`; reaching `0.044` from
+  `0.11` needs `~6x` more spots, `~75x75`). The supplement states 30x30.
+- Most parsimonious explanation: the `avgSEE/avgSEM` columns were computed by a
+  formula that yields a smaller quantity than the estimator SD (e.g. a
+  Monte-Carlo SE of the mean, or a mis-scaled posterior summary). This is a
+  reporting/definitional issue, not evidence of an error in the biology.
+
+## Corroboration across Simulation 2, Simulation 3, and HER2 real data
+
+The under-reported eta uncertainty is systematic, not specific to Simulation 1,
+and extends to the real-data analysis:
+
+| data                 | paper eta SEE / CI width | local eta SEE / CI width | factor  |
+|----------------------|--------------------------|--------------------------|---------|
+| Sim 1 (eta 0.4)      | 0.044                    | 0.245                    | 5.6x    |
+| Sim 2 (4 settings)   | 0.022 - 0.031            | 0.222 - 0.404            | 9-16x   |
+| Sim 3 (4 settings)   | 0.011 - 0.055            | 0.299 - 0.337            | 6-27x   |
+| HER2 (real, eta CI)  | [2.926, 2.946]  w=0.02   | [1.589, 3.999]  w=2.41   | ~120x   |
+
+Sources: `output/sim2_advi_key_comparison_n200.csv`,
+`output/sim3_advi_key_comparison_n200.csv`; HER2 from `repro/_verify/` /
+`repro/realdata/` logs and STATUS. On the SAME HER2 data, the local original-ADVI
+run gives eta `2.665 [1.589, 3.999]` while the paper reports
+`2.936 [2.926, 2.946]` -- a 120x narrower interval. So the phenomenon is not
+confined to the simulation tables; it also governs the credible intervals of the
+paper's headline real-data result.
+
+## Forensic note: the reported SE is not a simple transform of the estimator SD
+
+Attempting to recover the paper's SEE/SEM from the local per-replicate outputs:
+the paper/local ratio is NOT constant across parameters (0.13-0.30 for Proposed
+ADVI, eta=0.4) and is NOT `SD/sqrt(200)` (which would give 0.013-0.035, below the
+reported 0.044-0.065). So no single rescaling of the local outputs reproduces the
+paper's column; the exact computation could not be reverse-engineered. Separately,
+the paper's ADVI SEE is nearly flat (~0.05) across beta1..beta5 despite true
+coefficients 1..5 -- expected for orthogonal standard-normal covariates, but the
+magnitude (~10x below the local and the floor) remains unexplained.
+
+## Figures
+
+- `fig_eta_se_floor.png` -- eta SE vs covariate scale (linear-predictor SD). The
+  mean posterior SD and empirical SD (both ~= CRLB) floor at ~0.11 as covariates
+  are removed; the paper's ADVI (0.044) and NUTS (0.021) SEE lines and the local
+  NUTS SD (0.24, literal design) are marked for reference.
+- `fig_mcmle_vs_pl.png` -- eta CV vs coupling strength for pseudolikelihood (GLM)
+  and full-likelihood MCMLE; the curves coincide (SE ratio 1.02), so the
+  pseudolikelihood already attains the Cramer-Rao bound. Paper ADVI/NUTS CV at
+  eta=0.4 sit far below the achievable curve.
+
+Regenerate with `Rscript make_figures.R`.
+
+## Reproduce
+
+```
+cd repro/paper_reproduce
+N_REP=50 ETA_VALUES=0.4 XSD_VALUES=0.25,0.1,0.05,0.01 Rscript diagnose_covariate_scale.R
+ETA_SUM=0.11 XSD=1.0,0.5,0.25,0.1,0.0 Rscript crlb_vs_covscale.R
+ETA_TRUE=0.11 N_DATA=2 Rscript mcmle_autologistic.R
+N_REP=8 ETA=0.4 ADAPT_DELTA=0.99 Rscript nuts_sim1_tuned.R
+```

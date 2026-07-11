@@ -1,0 +1,3 @@
+"dataset","disease_rate","eta_true","eta_PL","eta_PL_se","CV_PL","eta_MCMLE","eta_MCMLE_se","CV_MCMLE","SE_ratio_PL_over_MCMLE","secs"
+1,0.53,0.44,0.3487,0.0712,0.204,0.3386,0.0685,0.202,1.04,2.9
+2,0.558,0.44,0.451,0.0748,0.166,0.4468,0.0744,0.167,1.01,2.8

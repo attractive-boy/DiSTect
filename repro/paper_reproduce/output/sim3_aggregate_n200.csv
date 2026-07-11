@@ -1,0 +1,85 @@
+"method","setting","kind","param","avgBias","avgSEE","avgSEM","avgCI","meanMissing","n"
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta1",0.17155033443,0.17293517358761,0.183692091022288,0.895,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta2",0.26336091935,0.219505831565988,0.242780572206839,0.91,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta3",0.3708313316,0.267816273523264,0.324469367668079,0.915,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta4",0.51572888625,0.336650789467869,0.409735160827486,0.885,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta5",0.6084599588,0.388477404461919,0.492566450810414,0.89,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta6",0.136777121135684,0.16847581355667,0.168974761181461,0.955,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta7",0.134710709478746,0.174079092468052,0.187103611168432,0.96,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta8",0.132064079542663,0.165072506701643,0.166404526927341,0.945,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta9",0.129847098138077,0.160669924836651,0.179959216848312,0.975,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta10",0.135013786664244,0.172288254998522,0.155034951411973,0.915,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta11",0.150212048903392,0.184528974381866,0.174010430419196,0.935,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta12",0.134034121540923,0.169670589166753,0.178961584722092,0.965,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta13",0.131011270266564,0.16053043557291,0.175560332191072,0.965,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta14",0.138458647377383,0.170860896487285,0.168943021291905,0.945,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta15",0.151410674655129,0.187506836753899,0.16635897025022,0.905,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta16",0.151758122313518,0.179987730023238,0.156232621917173,0.93,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta17",0.134456148341061,0.167575943362819,0.183457592974352,0.955,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta18",0.130426652465827,0.168076399128246,0.181223962664112,0.97,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta19",0.136336207779224,0.167370253874933,0.164660812972033,0.955,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","beta20",0.136109247107395,0.171391630174071,0.170031914424226,0.945,10,200
+"Missing first-pass (ADVI)","10 Missing Spots","ignorable","eta",0.325450394765,0.299278495122127,0.346250213729707,0.865,10,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta1",0.21094842649975,0.207994332958445,0.189263351476086,0.845,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta2",0.3005452444,0.235816796921518,0.248337086118725,0.86,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta3",0.40697707685,0.277927443704155,0.333035774760214,0.855,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta4",0.5754293458,0.366846259702746,0.419172355259621,0.8,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta5",0.6998646272,0.423740354561067,0.505763868561103,0.78,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta6",0.153293125966205,0.191690770832747,0.172407727867342,0.925,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta7",0.148650506905987,0.183426082117131,0.189286549066298,0.965,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta8",0.147019056937554,0.184705086463582,0.170241571867607,0.925,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta9",0.143753942915226,0.183314722794862,0.182656812425765,0.965,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta10",0.13984930890339,0.174336652445532,0.157426064960104,0.93,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta11",0.146109384851498,0.181606274404851,0.177601666625173,0.945,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta12",0.167544878058528,0.205666381381862,0.183250882000034,0.94,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta13",0.154345676719136,0.190084932686654,0.179515800010925,0.965,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta14",0.145731109009338,0.179581890213131,0.174652397040468,0.97,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta15",0.143226606199683,0.181504127420581,0.170678589997665,0.93,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta16",0.163877047947614,0.204588254269773,0.160490375841563,0.9,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta17",0.142330157963331,0.180432355070676,0.187692637540695,0.95,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta18",0.134907329470511,0.169086251934351,0.183705184437907,0.975,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta19",0.139265074982489,0.179185184483202,0.167925388820371,0.925,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","beta20",0.130429559237073,0.163100294958186,0.173353327310777,0.955,30,200
+"Missing first-pass (ADVI)","30 Missing Spots","ignorable","eta",0.353242302025,0.336656624552918,0.353366574512438,0.88,30,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta1",0.1986317981,0.192529243329835,0.184654671611825,0.85,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta2",0.26699890215,0.239031986764106,0.242308046770972,0.845,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta3",0.3718448049,0.305875740195158,0.323293497821062,0.86,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta4",0.5020126551,0.350598456167389,0.407531819506452,0.84,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta5",0.64236581815,0.448769066435303,0.493834050291656,0.83,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta6",0.123391526634494,0.155247276702865,0.169562579317827,0.96,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta7",0.141244666312265,0.172975870509363,0.185163240709769,0.975,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta8",0.135170016320746,0.170827011596884,0.165326729161579,0.965,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta9",0.159103975770278,0.191481443510411,0.178607690753306,0.97,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta10",0.140848436705844,0.182446862780635,0.15339474893515,0.91,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta11",0.156623286792504,0.200141274402325,0.172513485999254,0.915,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta12",0.129843244847022,0.166228756975748,0.179015351688994,0.975,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta13",0.127612899411232,0.160952023013931,0.175375568343808,0.96,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta14",0.135745267996748,0.18108692557594,0.16973487426106,0.915,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta15",0.141705819394468,0.178243379967857,0.167218056880825,0.93,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta16",0.128328004215352,0.167597580671717,0.155241851942903,0.935,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta17",0.129381806443,0.169850856510026,0.183409454169791,0.96,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta18",0.148315839563784,0.193806380910274,0.18144424985115,0.915,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta19",0.140641342287978,0.17302371775132,0.163997184828563,0.94,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","beta20",0.141244322250247,0.172163883311697,0.169537533582618,0.95,4.17,200
+"Missing first-pass (ADVI)","gamma=(-6,1,4)","nonignorable","eta",0.324551885055,0.307440440859199,0.344402152032785,0.865,4.17,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta1",0.1716760589445,0.171604009897378,0.18416305538222,0.905,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta2",0.27562600165,0.2204144070162,0.244308432777368,0.895,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta3",0.35860961875,0.277172158716665,0.323870415680518,0.89,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta4",0.49599339795,0.364967149320246,0.407739544350483,0.88,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta5",0.61632463205,0.415423304286799,0.493884473920979,0.87,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta6",0.136079316770382,0.17150900992031,0.170870516062173,0.93,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta7",0.13923779094537,0.173735441183332,0.1863392384168,0.965,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta8",0.137080316175728,0.168432614580954,0.165360023538577,0.965,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta9",0.130545422871444,0.163404827731324,0.180358614765981,0.975,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta10",0.14922980921062,0.180555201918879,0.154103322467627,0.925,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta11",0.154032691623709,0.194353752642012,0.174281140625508,0.925,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta12",0.128149005099385,0.158297850955588,0.179638423228127,0.995,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta13",0.136168721069113,0.164942663991931,0.176137856073474,0.98,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta14",0.144217786716131,0.184389267772454,0.168723636721111,0.915,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta15",0.143154846716778,0.174867252323736,0.166770844728153,0.95,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta16",0.150522440846311,0.190484751018699,0.155850021152202,0.88,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta17",0.141414277407856,0.178366447693392,0.183335124271003,0.96,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta18",0.132844713017212,0.164285052974994,0.18033264024172,0.945,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta19",0.139064800656117,0.178270536577072,0.164027525395452,0.935,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","beta20",0.136015281793316,0.170928934676029,0.170671358872319,0.945,11.895,200
+"Missing first-pass (ADVI)","gamma=(-5,1,1.6)","nonignorable","eta",0.308998135405,0.3145534746286,0.345078977385466,0.915,11.895,200
