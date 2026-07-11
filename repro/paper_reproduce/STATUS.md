@@ -14,6 +14,13 @@ The exact source formula and the remaining ADVI numerical mismatch cannot be
 confirmed without the authors' simulation script. See
 `ETA_UNCERTAINTY_FINDING.md` and `output/uncertainty_scaling_audit.csv`.
 
+Formula reverse-search over 81 cells in Tables C1-C6 further shows that the
+`sqrt(200)` explanation is systematic but incomplete. Scaled RMSE/posterior SD
+is the best family for C1-C3 and C5-C6, while no candidate explains C4. This
+separates the problem into a likely reporting-scale issue and an independent
+multiple-slice/ADVI implementation mismatch. See
+`UNCERTAINTY_FORMULA_SEARCH.md`.
+
 ## UPDATE (2026-07-09): eta discrepancy resolved to an uncertainty-column issue
 
 The eta discrepancy is NOT a local bug, ADVI setting, prior mismatch, covariate
