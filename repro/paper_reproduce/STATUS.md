@@ -21,6 +21,16 @@ separates the problem into a likely reporting-scale issue and an independent
 multiple-slice/ADVI implementation mismatch. See
 `UNCERTAINTY_FORMULA_SEARCH.md`.
 
+## UPDATE (2026-07-11): targeted 10-replicate ADVI grid completed
+
+The 160-fit targeted grid tested meanfield/fullrank, posterior SD/draw MCSE,
+neighbor average/sum, fixed/regenerated X, and all four Table C4 covariance
+settings. Neighbor sum plus regenerated X is the only single-slice configuration
+that approaches Table C1 (fullrank eta bias `0.048`, empirical SD `0.053` versus
+paper `0.087/0.044`), though posterior SD remains `0.087` and fullrank has severe
+Pareto-k instability. No multiple-slice covariance setting approaches C4.
+Details: `TARGETED_ADVI_GRID.md`.
+
 ## UPDATE (2026-07-09): eta discrepancy resolved to an uncertainty-column issue
 
 The eta discrepancy is NOT a local bug, ADVI setting, prior mismatch, covariate

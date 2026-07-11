@@ -50,6 +50,7 @@ Rscript repro/paper_reproduce/nuts_sim1_tuned.R
 Rscript repro/paper_reproduce/mcmle_autologistic.R
 Rscript repro/paper_reproduce/diagnose_uncertainty_scaling.R
 Rscript repro/paper_reproduce/reverse_search_uncertainty_formulas.R
+N_REP=10 ADVI_ITER=3000 Rscript repro/paper_reproduce/run_targeted_advi_grid.R
 Rscript repro/paper_reproduce/make_figures.R
 ```
 

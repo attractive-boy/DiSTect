@@ -72,6 +72,10 @@ replicates) restricted to:
 Only configurations that improve point-estimate and uncertainty agreement
 simultaneously should be promoted to a 200-replicate run.
 
+The targeted grid has now been run. Neighbor sum plus regenerated X is the only
+single-slice configuration that approaches Table C1, while no covariance
+setting approaches Table C4. See `TARGETED_ADVI_GRID.md`.
+
 ## Outputs
 
 - `output/uncertainty_formula_search_scores.csv`: formula scores by scope.
