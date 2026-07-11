@@ -1,0 +1,5 @@
+"setting","kind","rep","method","seconds"
+"10 Missing Spots","ignorable",1,"Missing first-pass (ADVI)",19.082
+"30 Missing Spots","ignorable",1,"Missing first-pass (ADVI)",0.283999999999999
+"gamma=(-6,1,4)","nonignorable",1,"Missing first-pass (ADVI)",0.241000000000003
+"gamma=(-5,1,1.6)","nonignorable",1,"Missing first-pass (ADVI)",0.238

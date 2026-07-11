@@ -1,0 +1,2 @@
+"eta_true","rep","secs","divergences","eta_hat","eta_sd","eta_absbias","b1","b2","b3","b4","b5","beta_absbias_mean"
+0.4,1,19.4,67,0.817,0.325,0.417,1.43,2.69,3.77,-5.34,-6.37,0.922

@@ -1,0 +1,189 @@
+
+
+==========  1. SINGLE-SLICE MODEL (toy: 300 spots, 3 genes)  ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.004797 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 47.97 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100      -187648.407             1.000            1.000
+Chain 1:    200      -187390.397             0.501            1.000
+Chain 1:    300      -187305.355             0.334            0.001
+Chain 1:    400      -187274.348             0.001            0.000
+Chain 1:    500      -187260.340             0.000            0.000
+Chain 1:    600      -187254.045             0.000            0.000
+Chain 1:    700      -187251.827             0.000            0.000
+Chain 1:    800      -187250.218             0.000            0.000
+Chain 1:    900      -187249.011             0.000            0.000   MEAN ELBO CONVERGED   MEDIAN ELBO CONVERGED
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+          mean     sd   2.5%  97.5%
+beta[1] 1.0776 0.2607 0.5550 1.5728
+beta[2] 1.9328 0.2813 1.4260 2.4831
+beta[3] 3.4886 0.4286 2.6477 4.2420
+eta     0.0332 0.0185 0.0110 0.0820
+w       0.7746 0.1821 0.3281 0.9812
+
+Standardized effect size |mean/sd| (gene ranking metric from paper):
+gene3 gene2 gene1 
+8.140 6.871 4.133 
+警告信息:
+Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead. 
+
+
+==========  2. INTERACTION MODEL + NETWORK  ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.003126 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 31.26 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100      -188300.157             1.000            1.000
+Chain 1:    200      -187639.583             0.502            1.000
+Chain 1:    300      -187409.306             0.335            0.004
+Chain 1:    400      -187303.490             0.002            0.001
+Chain 1:    500      -187274.332             0.001            0.001
+Chain 1:    600      -187264.889             0.000            0.000
+Chain 1:    700      -187261.204             0.000            0.000
+Chain 1:    800      -187259.132             0.000            0.000
+Chain 1:    900      -187258.307             0.000            0.000
+Chain 1:   1000      -187257.306             0.000            0.000   MEAN ELBO CONVERGED   MEDIAN ELBO CONVERGED
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+警告: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+        term   mean     sd std_effect
+       gene1 1.3318 0.2700      4.933
+       gene2 2.0747 0.2975      6.973
+       gene3 4.0517 0.4486      9.031
+ gene1*gene2 0.3022 0.3440      0.878
+ gene1*gene3 0.4750 0.4068      1.168
+ gene2*gene3 0.7809 0.2694      2.898
+
+Interaction terms retained (|std effect| > 1.96, paper threshold):
+               term   mean     sd std_effect
+beta[6] gene2*gene3 0.7809 0.2694      2.898
+
+
+==========  3. MULTIPLE-SLICE MODEL (toy2: 200 spots, label/random effect)  ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.002028 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 20.28 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100       -83579.648             1.000            1.000
+Chain 1:    200       -83448.534             0.501            1.000
+Chain 1:    300       -83404.031             0.334            0.002
+Chain 1:    400       -83386.394             0.001            0.001
+Chain 1:    500       -83377.813             0.000            0.000
+Chain 1:    600       -83374.287             0.000            0.000
+Chain 1:    700       -83372.288             0.000            0.000
+Chain 1:    800       -83371.136             0.000            0.000
+Chain 1:    900       -83370.623             0.000            0.000
+Chain 1:   1000       -83370.001             0.000            0.000   MEAN ELBO CONVERGED   MEDIAN ELBO CONVERGED
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+                mean     sd    2.5%  97.5%
+beta[1]       0.1725 0.1679 -0.1607 0.4885
+beta[2]       0.2068 0.1385 -0.0550 0.4839
+beta[3]      -0.1961 0.1561 -0.5122 0.0965
+eta           0.1909 0.0979  0.0677 0.4404
+rho           0.5350 0.2842  0.0448 0.9733
+sigma_square  0.9510 0.0273  0.8811 0.9845
+w             0.7604 0.1911  0.2712 0.9784
+
+
+==========  4. PREDICTION on held-out spots (Gibbs, 100 sweeps)  ==========
+Test spots: 60 | Prediction accuracy: 0.867
+     predicted
+truth  0  1
+    0 28  7
+    1  1 24
+
+
+==========  5. MISSING IMPUTATION (JAGS/Gibbs, neighbour-based)  ==========
+Compiling model graph
+   Resolving undeclared variables
+   Allocating nodes
+Graph information:
+   Observed stochastic nodes: 0
+   Unobserved stochastic nodes: 30
+   Total graph size: 303
+
+Initializing model
+
+Missing spots: 30 | Imputation accuracy (>0.5): 0.500
+ spot true post_prob imputed
+  298    0     0.496       0
+  103    0     0.500       1
+  194    0     0.502       1
+  271    0     0.491       0
+  218    1     0.495       0
+  118    0     0.501       1
+  168    1     0.495       0
+   22    1     0.491       0
+   59    0     0.496       0
+   90    0     0.491       0
+
+
+==========  DONE  ==========
+Figures written to /Users/licheng/Documents/DiSTect/repro 

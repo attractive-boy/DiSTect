@@ -1,0 +1,241 @@
+== btaf530 Supplement A2.1 / Simulation 1 ==
+replicates=10 | eta=0.4,1.6,2.8 | ADVI=yes | NUTS=FALSE
+Formula: logit(mu_i) = beta'X_i + eta * mean_neighbor_y_i
+
+-- eta 0.4 replicate 1/10 (seed=100401) --
+Warning: Pareto k diagnostic value is 57.49. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 19.7s
+   proposed ADVI 19.0s
+
+-- eta 0.4 replicate 2/10 (seed=100402) --
+Warning: Pareto k diagnostic value is 55.63. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 3/10 (seed=100403) --
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 4/10 (seed=100404) --
+Warning: Pareto k diagnostic value is 59.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 5/10 (seed=100405) --
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 6/10 (seed=100406) --
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 7/10 (seed=100407) --
+Warning: Pareto k diagnostic value is 54.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 8/10 (seed=100408) --
+Warning: Pareto k diagnostic value is 64.81. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 9/10 (seed=100409) --
+Warning: Pareto k diagnostic value is 1.16. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 10/10 (seed=100410) --
+Warning: Pareto k diagnostic value is 59.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 1/10 (seed=101601) --
+Warning: Pareto k diagnostic value is 57.97. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 2/10 (seed=101602) --
+Warning: Pareto k diagnostic value is 1.17. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 3/10 (seed=101603) --
+Warning: Pareto k diagnostic value is 61.25. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 4/10 (seed=101604) --
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 5/10 (seed=101605) --
+Warning: Pareto k diagnostic value is 58.81. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 6/10 (seed=101606) --
+Warning: Pareto k diagnostic value is 60.99. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 7/10 (seed=101607) --
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 8/10 (seed=101608) --
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 9/10 (seed=101609) --
+Warning: Pareto k diagnostic value is 1.08. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 10/10 (seed=101610) --
+Warning: Pareto k diagnostic value is 1.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 1/10 (seed=102801) --
+Warning: Pareto k diagnostic value is 56.13. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 2/10 (seed=102802) --
+Warning: Pareto k diagnostic value is 59.51. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 3/10 (seed=102803) --
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 4/10 (seed=102804) --
+Warning: Pareto k diagnostic value is 56.55. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 5/10 (seed=102805) --
+Warning: Pareto k diagnostic value is 60.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 6/10 (seed=102806) --
+Warning: Pareto k diagnostic value is 54.92. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 7/10 (seed=102807) --
+Warning: Pareto k diagnostic value is 56.84. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 8/10 (seed=102808) --
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 9/10 (seed=102809) --
+Warning: Pareto k diagnostic value is 59.31. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 10/10 (seed=102810) --
+Warning: Pareto k diagnostic value is 60.88. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+== Simulation 1 outputs ==
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_raw_n10.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_aggregate_n10.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_timings_n10.csv 
+
+Aggregate preview:
+                 method eta_setting  param    avgBias     avgSEE    avgSEM
+    Naive Method (ADVI)         0.4  beta1 0.23533756 0.24611145 0.3341625
+    Naive Method (ADVI)         0.4  beta2 1.42791405 1.25555171 0.5303873
+    Naive Method (ADVI)         0.4  beta3 1.48818489 1.34636044 0.5177960
+    Naive Method (ADVI)         0.4  beta4 1.45568420 1.33833299 0.5313098
+    Naive Method (ADVI)         0.4  beta5 1.95056616 1.77741913 0.6350533
+    Naive Method (ADVI)         0.4  beta6 0.68650700 0.59049477 0.4282134
+    Naive Method (ADVI)         0.4  beta7 0.14532104 0.17614789 0.3126202
+    Naive Method (ADVI)         0.4  beta8 0.14298898 0.18004325 0.3087505
+    Naive Method (ADVI)         0.4  beta9 0.38959671 0.28572631 0.4147278
+    Naive Method (ADVI)         0.4 beta10 0.18108268 0.23759292 0.3007239
+    Naive Method (ADVI)         0.4 beta11 0.42451992 0.32621285 0.4272613
+    Naive Method (ADVI)         0.4 beta12 0.21704908 0.17938623 0.3576542
+    Naive Method (ADVI)         0.4 beta13 0.14135375 0.18913238 0.3185912
+    Naive Method (ADVI)         0.4 beta14 0.76408488 0.51974812 0.4849696
+    Naive Method (ADVI)         0.4 beta15 0.57142877 0.49156640 0.4550810
+    Naive Method (ADVI)         0.4 beta16 0.27798870 0.22258077 0.3541433
+    Naive Method (ADVI)         0.4 beta17 0.60316668 0.49860890 0.4673011
+    Naive Method (ADVI)         0.4 beta18 0.17431587 0.24586369 0.3041369
+    Naive Method (ADVI)         0.4 beta19 0.53888981 0.38835893 0.4435564
+    Naive Method (ADVI)         0.4 beta20 0.46095480 0.39158749 0.3994023
+ Proposed Method (ADVI)         0.4  beta1 0.15747222 0.19291272 0.1817836
+ Proposed Method (ADVI)         0.4  beta2 0.22833177 0.18948278 0.2424522
+ Proposed Method (ADVI)         0.4  beta3 0.43367604 0.17118970 0.3289110
+ Proposed Method (ADVI)         0.4  beta4 0.47754639 0.26942414 0.4099905
+ Proposed Method (ADVI)         0.4  beta5 0.61643568 0.33474604 0.4943049
+ Proposed Method (ADVI)         0.4  beta6 0.17454406 0.22271008 0.1638686
+ Proposed Method (ADVI)         0.4  beta7 0.11030604 0.13329206 0.1843396
+ Proposed Method (ADVI)         0.4  beta8 0.20494727 0.24046543 0.1646734
+ Proposed Method (ADVI)         0.4  beta9 0.07593422 0.09599562 0.1781787
+ Proposed Method (ADVI)         0.4 beta10 0.13743900 0.16882894 0.1478485
+ avgCI  n
+   1.0 10
+   0.4 10
+   0.4 10
+   0.4 10
+   0.4 10
+   0.8 10
+   1.0 10
+   1.0 10
+   1.0 10
+   1.0 10
+   0.9 10
+   0.9 10
+   1.0 10
+   0.9 10
+   1.0 10
+   1.0 10
+   1.0 10
+   0.9 10
+   1.0 10
+   1.0 10
+   0.9 10
+   0.9 10
+   1.0 10
+   0.9 10
+   0.9 10
+   0.7 10
+   1.0 10
+   0.9 10
+   1.0 10
+   0.9 10

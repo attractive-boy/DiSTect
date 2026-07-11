@@ -1,0 +1,3820 @@
+== btaf530 Supplement A2.3 / Simulation 3 ==
+replicates=200 | eta=1.6 | impute_iter=1 | ADVI missing first-pass
+
+-- 10 Missing Spots replicate 1/200 (seed=301001) --
+   missing spots: 10
+   missing ADVI 19.0s
+
+-- 10 Missing Spots replicate 2/200 (seed=301002) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.7. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- 10 Missing Spots replicate 3/200 (seed=301003) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 4/200 (seed=301004) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 5/200 (seed=301005) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 6/200 (seed=301006) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 7/200 (seed=301007) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.13. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 8/200 (seed=301008) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 9/200 (seed=301009) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 10/200 (seed=301010) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 11/200 (seed=301011) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 12/200 (seed=301012) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 13/200 (seed=301013) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.22. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 14/200 (seed=301014) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 15/200 (seed=301015) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 16/200 (seed=301016) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 17/200 (seed=301017) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 18/200 (seed=301018) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 19/200 (seed=301019) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 20/200 (seed=301020) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 21/200 (seed=301021) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 22/200 (seed=301022) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 23/200 (seed=301023) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 24/200 (seed=301024) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 25/200 (seed=301025) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 26/200 (seed=301026) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 27/200 (seed=301027) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 28/200 (seed=301028) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 29/200 (seed=301029) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 30/200 (seed=301030) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 31/200 (seed=301031) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 32/200 (seed=301032) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 33/200 (seed=301033) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 34/200 (seed=301034) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 35/200 (seed=301035) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 36/200 (seed=301036) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 37/200 (seed=301037) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.27. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 38/200 (seed=301038) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 39/200 (seed=301039) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 40/200 (seed=301040) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 41/200 (seed=301041) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 42/200 (seed=301042) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 43/200 (seed=301043) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 44/200 (seed=301044) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 45/200 (seed=301045) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 46/200 (seed=301046) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 47/200 (seed=301047) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.43. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 48/200 (seed=301048) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 49/200 (seed=301049) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 50/200 (seed=301050) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 51/200 (seed=301051) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 52/200 (seed=301052) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 53/200 (seed=301053) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 54/200 (seed=301054) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 55/200 (seed=301055) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 56/200 (seed=301056) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.3. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 57/200 (seed=301057) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 58/200 (seed=301058) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- 10 Missing Spots replicate 59/200 (seed=301059) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- 10 Missing Spots replicate 60/200 (seed=301060) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 61/200 (seed=301061) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.42. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 62/200 (seed=301062) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 63/200 (seed=301063) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 64/200 (seed=301064) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 65/200 (seed=301065) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 66/200 (seed=301066) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 67/200 (seed=301067) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 68/200 (seed=301068) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 69/200 (seed=301069) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 70/200 (seed=301070) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 71/200 (seed=301071) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 72/200 (seed=301072) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 73/200 (seed=301073) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 74/200 (seed=301074) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 75/200 (seed=301075) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 76/200 (seed=301076) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 77/200 (seed=301077) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 78/200 (seed=301078) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 79/200 (seed=301079) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 80/200 (seed=301080) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 81/200 (seed=301081) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 82/200 (seed=301082) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 83/200 (seed=301083) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 84/200 (seed=301084) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.3. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 85/200 (seed=301085) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.23. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.3s
+
+-- 10 Missing Spots replicate 86/200 (seed=301086) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.17. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 87/200 (seed=301087) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 88/200 (seed=301088) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 89/200 (seed=301089) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 90/200 (seed=301090) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.27. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 91/200 (seed=301091) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 92/200 (seed=301092) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 93/200 (seed=301093) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 94/200 (seed=301094) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 95/200 (seed=301095) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 96/200 (seed=301096) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 97/200 (seed=301097) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 98/200 (seed=301098) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 99/200 (seed=301099) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 100/200 (seed=301100) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 101/200 (seed=301101) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 102/200 (seed=301102) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 103/200 (seed=301103) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 104/200 (seed=301104) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 105/200 (seed=301105) --
+   missing spots: 10
+   missing ADVI 0.3s
+
+-- 10 Missing Spots replicate 106/200 (seed=301106) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 107/200 (seed=301107) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 108/200 (seed=301108) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.07. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 109/200 (seed=301109) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 110/200 (seed=301110) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 111/200 (seed=301111) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 112/200 (seed=301112) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 113/200 (seed=301113) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 114/200 (seed=301114) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 115/200 (seed=301115) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 116/200 (seed=301116) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 117/200 (seed=301117) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 118/200 (seed=301118) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 119/200 (seed=301119) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 120/200 (seed=301120) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 121/200 (seed=301121) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 122/200 (seed=301122) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 123/200 (seed=301123) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 124/200 (seed=301124) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 125/200 (seed=301125) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 126/200 (seed=301126) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 127/200 (seed=301127) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 128/200 (seed=301128) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 129/200 (seed=301129) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 130/200 (seed=301130) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 131/200 (seed=301131) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 132/200 (seed=301132) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 133/200 (seed=301133) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 134/200 (seed=301134) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 135/200 (seed=301135) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 136/200 (seed=301136) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 137/200 (seed=301137) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 138/200 (seed=301138) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 139/200 (seed=301139) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.18. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 140/200 (seed=301140) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 141/200 (seed=301141) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 142/200 (seed=301142) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.3s
+
+-- 10 Missing Spots replicate 143/200 (seed=301143) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 144/200 (seed=301144) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 145/200 (seed=301145) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 146/200 (seed=301146) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 147/200 (seed=301147) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 148/200 (seed=301148) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 149/200 (seed=301149) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 150/200 (seed=301150) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 151/200 (seed=301151) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 152/200 (seed=301152) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 153/200 (seed=301153) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 154/200 (seed=301154) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 155/200 (seed=301155) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 156/200 (seed=301156) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 157/200 (seed=301157) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 158/200 (seed=301158) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 159/200 (seed=301159) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 160/200 (seed=301160) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 161/200 (seed=301161) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 162/200 (seed=301162) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.2. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 163/200 (seed=301163) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 164/200 (seed=301164) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 165/200 (seed=301165) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 166/200 (seed=301166) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 167/200 (seed=301167) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 168/200 (seed=301168) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 169/200 (seed=301169) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 170/200 (seed=301170) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 171/200 (seed=301171) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 172/200 (seed=301172) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 173/200 (seed=301173) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 174/200 (seed=301174) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 175/200 (seed=301175) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 176/200 (seed=301176) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 177/200 (seed=301177) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 178/200 (seed=301178) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 179/200 (seed=301179) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 180/200 (seed=301180) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 181/200 (seed=301181) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 182/200 (seed=301182) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 183/200 (seed=301183) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 184/200 (seed=301184) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 185/200 (seed=301185) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 186/200 (seed=301186) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 187/200 (seed=301187) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 188/200 (seed=301188) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.37. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 189/200 (seed=301189) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 190/200 (seed=301190) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 191/200 (seed=301191) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 192/200 (seed=301192) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 193/200 (seed=301193) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 194/200 (seed=301194) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 195/200 (seed=301195) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 196/200 (seed=301196) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 197/200 (seed=301197) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 198/200 (seed=301198) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 199/200 (seed=301199) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 10 Missing Spots replicate 200/200 (seed=301200) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 1/200 (seed=302001) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.32. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 2/200 (seed=302002) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 3/200 (seed=302003) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 4/200 (seed=302004) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 5/200 (seed=302005) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 6/200 (seed=302006) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 7/200 (seed=302007) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 8/200 (seed=302008) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 9/200 (seed=302009) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 10/200 (seed=302010) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.35. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 11/200 (seed=302011) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 12/200 (seed=302012) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 13/200 (seed=302013) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 14/200 (seed=302014) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 15/200 (seed=302015) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.21. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 16/200 (seed=302016) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 17/200 (seed=302017) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 18/200 (seed=302018) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 19/200 (seed=302019) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 20/200 (seed=302020) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 21/200 (seed=302021) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 22/200 (seed=302022) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 23/200 (seed=302023) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 24/200 (seed=302024) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 25/200 (seed=302025) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 26/200 (seed=302026) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 27/200 (seed=302027) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 28/200 (seed=302028) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 29/200 (seed=302029) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 30/200 (seed=302030) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 31/200 (seed=302031) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 32/200 (seed=302032) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 33/200 (seed=302033) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 34/200 (seed=302034) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 35/200 (seed=302035) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 36/200 (seed=302036) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 37/200 (seed=302037) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 38/200 (seed=302038) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 39/200 (seed=302039) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 40/200 (seed=302040) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 41/200 (seed=302041) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 42/200 (seed=302042) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 43/200 (seed=302043) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 44/200 (seed=302044) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 45/200 (seed=302045) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 46/200 (seed=302046) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 47/200 (seed=302047) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 48/200 (seed=302048) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 49/200 (seed=302049) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 50/200 (seed=302050) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 51/200 (seed=302051) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 52/200 (seed=302052) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 53/200 (seed=302053) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 54/200 (seed=302054) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 55/200 (seed=302055) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 56/200 (seed=302056) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 57/200 (seed=302057) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 58/200 (seed=302058) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 59/200 (seed=302059) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 60/200 (seed=302060) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 61/200 (seed=302061) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 62/200 (seed=302062) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 63/200 (seed=302063) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 64/200 (seed=302064) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 65/200 (seed=302065) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 66/200 (seed=302066) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 67/200 (seed=302067) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 68/200 (seed=302068) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 69/200 (seed=302069) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 70/200 (seed=302070) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 71/200 (seed=302071) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 72/200 (seed=302072) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 73/200 (seed=302073) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.7. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 74/200 (seed=302074) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- 30 Missing Spots replicate 75/200 (seed=302075) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.36. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 76/200 (seed=302076) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 77/200 (seed=302077) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 78/200 (seed=302078) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 79/200 (seed=302079) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 80/200 (seed=302080) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 81/200 (seed=302081) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.16. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 82/200 (seed=302082) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 83/200 (seed=302083) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 84/200 (seed=302084) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 85/200 (seed=302085) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 86/200 (seed=302086) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 87/200 (seed=302087) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 88/200 (seed=302088) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 89/200 (seed=302089) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 90/200 (seed=302090) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 91/200 (seed=302091) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 92/200 (seed=302092) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 93/200 (seed=302093) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 94/200 (seed=302094) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 95/200 (seed=302095) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 96/200 (seed=302096) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 97/200 (seed=302097) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 98/200 (seed=302098) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 99/200 (seed=302099) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 100/200 (seed=302100) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 101/200 (seed=302101) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 102/200 (seed=302102) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 103/200 (seed=302103) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 104/200 (seed=302104) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 105/200 (seed=302105) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 106/200 (seed=302106) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 107/200 (seed=302107) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 108/200 (seed=302108) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 109/200 (seed=302109) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 110/200 (seed=302110) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- 30 Missing Spots replicate 111/200 (seed=302111) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 112/200 (seed=302112) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 113/200 (seed=302113) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 114/200 (seed=302114) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 115/200 (seed=302115) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 116/200 (seed=302116) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 117/200 (seed=302117) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 118/200 (seed=302118) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 119/200 (seed=302119) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 120/200 (seed=302120) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 121/200 (seed=302121) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 122/200 (seed=302122) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 123/200 (seed=302123) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 124/200 (seed=302124) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 125/200 (seed=302125) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 126/200 (seed=302126) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 127/200 (seed=302127) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 128/200 (seed=302128) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 129/200 (seed=302129) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 130/200 (seed=302130) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 131/200 (seed=302131) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 132/200 (seed=302132) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 133/200 (seed=302133) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 134/200 (seed=302134) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 135/200 (seed=302135) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 136/200 (seed=302136) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 137/200 (seed=302137) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 138/200 (seed=302138) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 139/200 (seed=302139) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 140/200 (seed=302140) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 141/200 (seed=302141) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 142/200 (seed=302142) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.63. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 143/200 (seed=302143) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 144/200 (seed=302144) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 145/200 (seed=302145) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 146/200 (seed=302146) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 147/200 (seed=302147) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 148/200 (seed=302148) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 149/200 (seed=302149) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.07. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 150/200 (seed=302150) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 151/200 (seed=302151) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 152/200 (seed=302152) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 153/200 (seed=302153) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 154/200 (seed=302154) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 155/200 (seed=302155) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 156/200 (seed=302156) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 157/200 (seed=302157) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 158/200 (seed=302158) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 159/200 (seed=302159) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 160/200 (seed=302160) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 161/200 (seed=302161) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 162/200 (seed=302162) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 163/200 (seed=302163) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 164/200 (seed=302164) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 165/200 (seed=302165) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 166/200 (seed=302166) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 167/200 (seed=302167) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 168/200 (seed=302168) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 169/200 (seed=302169) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 170/200 (seed=302170) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 171/200 (seed=302171) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 172/200 (seed=302172) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 173/200 (seed=302173) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 174/200 (seed=302174) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 175/200 (seed=302175) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 176/200 (seed=302176) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 177/200 (seed=302177) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 178/200 (seed=302178) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 179/200 (seed=302179) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 180/200 (seed=302180) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 181/200 (seed=302181) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 182/200 (seed=302182) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.13. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 183/200 (seed=302183) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 184/200 (seed=302184) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 185/200 (seed=302185) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 186/200 (seed=302186) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 187/200 (seed=302187) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 188/200 (seed=302188) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 189/200 (seed=302189) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 190/200 (seed=302190) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 191/200 (seed=302191) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.16. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 192/200 (seed=302192) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 193/200 (seed=302193) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 194/200 (seed=302194) --
+   missing spots: 30
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 195/200 (seed=302195) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 196/200 (seed=302196) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 197/200 (seed=302197) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 198/200 (seed=302198) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 199/200 (seed=302199) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- 30 Missing Spots replicate 200/200 (seed=302200) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 1/200 (seed=303001) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 2/200 (seed=303002) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 3/200 (seed=303003) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 4/200 (seed=303004) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 5/200 (seed=303005) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 6/200 (seed=303006) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 7/200 (seed=303007) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 8/200 (seed=303008) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 9/200 (seed=303009) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 10/200 (seed=303010) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 11/200 (seed=303011) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 12/200 (seed=303012) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 1.07. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 13/200 (seed=303013) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.08. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 14/200 (seed=303014) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 15/200 (seed=303015) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1.23. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 16/200 (seed=303016) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 17/200 (seed=303017) --
+   missing spots: 3
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 18/200 (seed=303018) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 19/200 (seed=303019) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 20/200 (seed=303020) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 21/200 (seed=303021) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 22/200 (seed=303022) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 23/200 (seed=303023) --
+   missing spots: 0
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 24/200 (seed=303024) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 25/200 (seed=303025) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.21. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 26/200 (seed=303026) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 27/200 (seed=303027) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 28/200 (seed=303028) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 29/200 (seed=303029) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 30/200 (seed=303030) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 31/200 (seed=303031) --
+   missing spots: 3
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 32/200 (seed=303032) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 1.13. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 33/200 (seed=303033) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 34/200 (seed=303034) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 35/200 (seed=303035) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 36/200 (seed=303036) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 37/200 (seed=303037) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 38/200 (seed=303038) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 39/200 (seed=303039) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 40/200 (seed=303040) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 41/200 (seed=303041) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 42/200 (seed=303042) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 43/200 (seed=303043) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 44/200 (seed=303044) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 45/200 (seed=303045) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 46/200 (seed=303046) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 47/200 (seed=303047) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 48/200 (seed=303048) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 49/200 (seed=303049) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 50/200 (seed=303050) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 51/200 (seed=303051) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 52/200 (seed=303052) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 53/200 (seed=303053) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 54/200 (seed=303054) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 55/200 (seed=303055) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 56/200 (seed=303056) --
+   missing spots: 0
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 57/200 (seed=303057) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 58/200 (seed=303058) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 59/200 (seed=303059) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 60/200 (seed=303060) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 61/200 (seed=303061) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 62/200 (seed=303062) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 63/200 (seed=303063) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 64/200 (seed=303064) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 65/200 (seed=303065) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 66/200 (seed=303066) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.18. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 67/200 (seed=303067) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 68/200 (seed=303068) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 69/200 (seed=303069) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 70/200 (seed=303070) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 1.22. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 71/200 (seed=303071) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 72/200 (seed=303072) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 73/200 (seed=303073) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 74/200 (seed=303074) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 75/200 (seed=303075) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 76/200 (seed=303076) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 77/200 (seed=303077) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 78/200 (seed=303078) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 79/200 (seed=303079) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 80/200 (seed=303080) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 81/200 (seed=303081) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.22. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 82/200 (seed=303082) --
+   missing spots: 7
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 83/200 (seed=303083) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 84/200 (seed=303084) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 85/200 (seed=303085) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 86/200 (seed=303086) --
+   missing spots: 7
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 87/200 (seed=303087) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 88/200 (seed=303088) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 89/200 (seed=303089) --
+   missing spots: 8
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 90/200 (seed=303090) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 91/200 (seed=303091) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 92/200 (seed=303092) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 93/200 (seed=303093) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 94/200 (seed=303094) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 95/200 (seed=303095) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 96/200 (seed=303096) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 97/200 (seed=303097) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 98/200 (seed=303098) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 99/200 (seed=303099) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 100/200 (seed=303100) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 101/200 (seed=303101) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.43. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 102/200 (seed=303102) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 103/200 (seed=303103) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 104/200 (seed=303104) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 105/200 (seed=303105) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 106/200 (seed=303106) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 107/200 (seed=303107) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 108/200 (seed=303108) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 109/200 (seed=303109) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 110/200 (seed=303110) --
+   missing spots: 3
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 111/200 (seed=303111) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 112/200 (seed=303112) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 113/200 (seed=303113) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 114/200 (seed=303114) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 115/200 (seed=303115) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 116/200 (seed=303116) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1.22. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 117/200 (seed=303117) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 118/200 (seed=303118) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 119/200 (seed=303119) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 120/200 (seed=303120) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 121/200 (seed=303121) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 122/200 (seed=303122) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.83. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 123/200 (seed=303123) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 124/200 (seed=303124) --
+   missing spots: 3
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 125/200 (seed=303125) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 126/200 (seed=303126) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 127/200 (seed=303127) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 128/200 (seed=303128) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 129/200 (seed=303129) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 130/200 (seed=303130) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 131/200 (seed=303131) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 132/200 (seed=303132) --
+   missing spots: 0
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 133/200 (seed=303133) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 134/200 (seed=303134) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 135/200 (seed=303135) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 136/200 (seed=303136) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 137/200 (seed=303137) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 138/200 (seed=303138) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 139/200 (seed=303139) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 140/200 (seed=303140) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.16. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 141/200 (seed=303141) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 142/200 (seed=303142) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 143/200 (seed=303143) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 144/200 (seed=303144) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 145/200 (seed=303145) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 146/200 (seed=303146) --
+   missing spots: 0
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 147/200 (seed=303147) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 148/200 (seed=303148) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 149/200 (seed=303149) --
+   missing spots: 2
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 150/200 (seed=303150) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 151/200 (seed=303151) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 152/200 (seed=303152) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 153/200 (seed=303153) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 154/200 (seed=303154) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 155/200 (seed=303155) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 156/200 (seed=303156) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 157/200 (seed=303157) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 158/200 (seed=303158) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 159/200 (seed=303159) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 160/200 (seed=303160) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 161/200 (seed=303161) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 162/200 (seed=303162) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 163/200 (seed=303163) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 164/200 (seed=303164) --
+   missing spots: 1
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 165/200 (seed=303165) --
+   missing spots: 8
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 166/200 (seed=303166) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 167/200 (seed=303167) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 168/200 (seed=303168) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 169/200 (seed=303169) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 170/200 (seed=303170) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 171/200 (seed=303171) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 172/200 (seed=303172) --
+   missing spots: 3
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 173/200 (seed=303173) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 174/200 (seed=303174) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1.08. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 175/200 (seed=303175) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 176/200 (seed=303176) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 177/200 (seed=303177) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 178/200 (seed=303178) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 179/200 (seed=303179) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 1.17. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 180/200 (seed=303180) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1.4. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 181/200 (seed=303181) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 182/200 (seed=303182) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 183/200 (seed=303183) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 184/200 (seed=303184) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 185/200 (seed=303185) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 186/200 (seed=303186) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 187/200 (seed=303187) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 188/200 (seed=303188) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 189/200 (seed=303189) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 190/200 (seed=303190) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 191/200 (seed=303191) --
+   missing spots: 4
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 192/200 (seed=303192) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 193/200 (seed=303193) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 194/200 (seed=303194) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 195/200 (seed=303195) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 196/200 (seed=303196) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 197/200 (seed=303197) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 198/200 (seed=303198) --
+   missing spots: 4
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 199/200 (seed=303199) --
+   missing spots: 1
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-6,1,4) replicate 200/200 (seed=303200) --
+   missing spots: 3
+Warning: Pareto k diagnostic value is 1.25. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 1/200 (seed=304001) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.25. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 2/200 (seed=304002) --
+   missing spots: 16
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 3/200 (seed=304003) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 4/200 (seed=304004) --
+   missing spots: 7
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 5/200 (seed=304005) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 6/200 (seed=304006) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 7/200 (seed=304007) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 1.3. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 8/200 (seed=304008) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 9/200 (seed=304009) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 10/200 (seed=304010) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 11/200 (seed=304011) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 12/200 (seed=304012) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 13/200 (seed=304013) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 14/200 (seed=304014) --
+   missing spots: 17
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 15/200 (seed=304015) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 16/200 (seed=304016) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.07. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 17/200 (seed=304017) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 18/200 (seed=304018) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 19/200 (seed=304019) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 20/200 (seed=304020) --
+   missing spots: 13
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 21/200 (seed=304021) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 22/200 (seed=304022) --
+   missing spots: 19
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 23/200 (seed=304023) --
+   missing spots: 7
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 24/200 (seed=304024) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 1.07. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 25/200 (seed=304025) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 26/200 (seed=304026) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 27/200 (seed=304027) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 28/200 (seed=304028) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 29/200 (seed=304029) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 30/200 (seed=304030) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 31/200 (seed=304031) --
+   missing spots: 5
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 32/200 (seed=304032) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 33/200 (seed=304033) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 34/200 (seed=304034) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 35/200 (seed=304035) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 36/200 (seed=304036) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 37/200 (seed=304037) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.51. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 38/200 (seed=304038) --
+   missing spots: 17
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 39/200 (seed=304039) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 40/200 (seed=304040) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 41/200 (seed=304041) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 42/200 (seed=304042) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 43/200 (seed=304043) --
+   missing spots: 6
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 44/200 (seed=304044) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 45/200 (seed=304045) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 46/200 (seed=304046) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 47/200 (seed=304047) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 48/200 (seed=304048) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 49/200 (seed=304049) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 50/200 (seed=304050) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 51/200 (seed=304051) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 52/200 (seed=304052) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 53/200 (seed=304053) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 1.17. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 54/200 (seed=304054) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 55/200 (seed=304055) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 1.37. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 56/200 (seed=304056) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 57/200 (seed=304057) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 58/200 (seed=304058) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 59/200 (seed=304059) --
+   missing spots: 16
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 60/200 (seed=304060) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 61/200 (seed=304061) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 62/200 (seed=304062) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 63/200 (seed=304063) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 1.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 64/200 (seed=304064) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 65/200 (seed=304065) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 66/200 (seed=304066) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 67/200 (seed=304067) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-5,1,1.6) replicate 68/200 (seed=304068) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 69/200 (seed=304069) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 70/200 (seed=304070) --
+   missing spots: 7
+   missing ADVI 0.3s
+
+-- gamma=(-5,1,1.6) replicate 71/200 (seed=304071) --
+   missing spots: 17
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 72/200 (seed=304072) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 73/200 (seed=304073) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.02. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 74/200 (seed=304074) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 75/200 (seed=304075) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.08. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 76/200 (seed=304076) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 77/200 (seed=304077) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 78/200 (seed=304078) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 79/200 (seed=304079) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1.09. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 80/200 (seed=304080) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 81/200 (seed=304081) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 82/200 (seed=304082) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 83/200 (seed=304083) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 84/200 (seed=304084) --
+   missing spots: 17
+Warning: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 85/200 (seed=304085) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 86/200 (seed=304086) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 87/200 (seed=304087) --
+   missing spots: 18
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 88/200 (seed=304088) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 89/200 (seed=304089) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 90/200 (seed=304090) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 91/200 (seed=304091) --
+   missing spots: 15
+   missing ADVI 0.3s
+
+-- gamma=(-5,1,1.6) replicate 92/200 (seed=304092) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 93/200 (seed=304093) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 94/200 (seed=304094) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 95/200 (seed=304095) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 96/200 (seed=304096) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 97/200 (seed=304097) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 98/200 (seed=304098) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 99/200 (seed=304099) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 100/200 (seed=304100) --
+   missing spots: 16
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 101/200 (seed=304101) --
+   missing spots: 18
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 102/200 (seed=304102) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 103/200 (seed=304103) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 104/200 (seed=304104) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 105/200 (seed=304105) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 106/200 (seed=304106) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 107/200 (seed=304107) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 108/200 (seed=304108) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 109/200 (seed=304109) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 110/200 (seed=304110) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 111/200 (seed=304111) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 112/200 (seed=304112) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.05. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 113/200 (seed=304113) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 114/200 (seed=304114) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-5,1,1.6) replicate 115/200 (seed=304115) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 116/200 (seed=304116) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 1.46. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 117/200 (seed=304117) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 118/200 (seed=304118) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 119/200 (seed=304119) --
+   missing spots: 6
+Warning: Pareto k diagnostic value is 1.36. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 120/200 (seed=304120) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 121/200 (seed=304121) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 122/200 (seed=304122) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 123/200 (seed=304123) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 124/200 (seed=304124) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 125/200 (seed=304125) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 126/200 (seed=304126) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 127/200 (seed=304127) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 128/200 (seed=304128) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 129/200 (seed=304129) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 130/200 (seed=304130) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 131/200 (seed=304131) --
+   missing spots: 17
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 132/200 (seed=304132) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 133/200 (seed=304133) --
+   missing spots: 16
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 134/200 (seed=304134) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 135/200 (seed=304135) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 1.18. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 136/200 (seed=304136) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 137/200 (seed=304137) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 138/200 (seed=304138) --
+   missing spots: 13
+Warning: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 139/200 (seed=304139) --
+   missing spots: 17
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 140/200 (seed=304140) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 141/200 (seed=304141) --
+   missing spots: 18
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 142/200 (seed=304142) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 143/200 (seed=304143) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.3s
+
+-- gamma=(-5,1,1.6) replicate 144/200 (seed=304144) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 145/200 (seed=304145) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 146/200 (seed=304146) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 147/200 (seed=304147) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 148/200 (seed=304148) --
+   missing spots: 7
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 149/200 (seed=304149) --
+   missing spots: 10
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 150/200 (seed=304150) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 151/200 (seed=304151) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 152/200 (seed=304152) --
+   missing spots: 13
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 153/200 (seed=304153) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 154/200 (seed=304154) --
+   missing spots: 18
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 155/200 (seed=304155) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 156/200 (seed=304156) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 157/200 (seed=304157) --
+   missing spots: 7
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 158/200 (seed=304158) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 159/200 (seed=304159) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 160/200 (seed=304160) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 161/200 (seed=304161) --
+   missing spots: 8
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 162/200 (seed=304162) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 163/200 (seed=304163) --
+   missing spots: 16
+Warning: Pareto k diagnostic value is 1.13. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 164/200 (seed=304164) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 165/200 (seed=304165) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 166/200 (seed=304166) --
+   missing spots: 20
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 167/200 (seed=304167) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 168/200 (seed=304168) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 169/200 (seed=304169) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 170/200 (seed=304170) --
+   missing spots: 12
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 171/200 (seed=304171) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 172/200 (seed=304172) --
+   missing spots: 8
+Warning: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.4s
+
+-- gamma=(-5,1,1.6) replicate 173/200 (seed=304173) --
+   missing spots: 17
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 174/200 (seed=304174) --
+   missing spots: 9
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 175/200 (seed=304175) --
+   missing spots: 16
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 176/200 (seed=304176) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 177/200 (seed=304177) --
+   missing spots: 14
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 178/200 (seed=304178) --
+   missing spots: 18
+Warning: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 179/200 (seed=304179) --
+   missing spots: 16
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 180/200 (seed=304180) --
+   missing spots: 16
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 181/200 (seed=304181) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 0.98. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 182/200 (seed=304182) --
+   missing spots: 7
+Warning: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 183/200 (seed=304183) --
+   missing spots: 16
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 184/200 (seed=304184) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 185/200 (seed=304185) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 186/200 (seed=304186) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 187/200 (seed=304187) --
+   missing spots: 2
+Warning: Pareto k diagnostic value is 1.14. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 188/200 (seed=304188) --
+   missing spots: 9
+Warning: Pareto k diagnostic value is 1.34. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 189/200 (seed=304189) --
+   missing spots: 14
+Warning: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 190/200 (seed=304190) --
+   missing spots: 10
+Warning: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 191/200 (seed=304191) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 192/200 (seed=304192) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 1.25. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 193/200 (seed=304193) --
+   missing spots: 18
+Warning: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 194/200 (seed=304194) --
+   missing spots: 13
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 195/200 (seed=304195) --
+   missing spots: 11
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 196/200 (seed=304196) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 197/200 (seed=304197) --
+   missing spots: 15
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 198/200 (seed=304198) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 199/200 (seed=304199) --
+   missing spots: 11
+Warning: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 200/200 (seed=304200) --
+   missing spots: 15
+   missing ADVI 0.2s
+
+== Simulation 3 outputs ==
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_raw_n200.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_aggregate_n200.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_timings_n200.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_missing_counts_n200.csv 
+
+Missing counts:
+           setting missing.mean missing.min missing.max
+1 10 Missing Spots       10.000      10.000      10.000
+2 30 Missing Spots       30.000      30.000      30.000
+3 gamma=(-5,1,1.6)       11.895       2.000      20.000
+4   gamma=(-6,1,4)        4.170       0.000      11.000
+
+Aggregate preview:
+                    method          setting      kind  param   avgBias
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta1 0.1715503
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta2 0.2633609
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta3 0.3708313
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta4 0.5157289
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta5 0.6084600
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta6 0.1367771
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta7 0.1347107
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta8 0.1320641
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta9 0.1298471
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta10 0.1350138
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta11 0.1502120
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta12 0.1340341
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta13 0.1310113
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta14 0.1384586
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta15 0.1514107
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta16 0.1517581
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta17 0.1344561
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta18 0.1304267
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta19 0.1363362
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta20 0.1361092
+ Missing first-pass (ADVI) 10 Missing Spots ignorable    eta 0.3254504
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta1 0.2109484
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta2 0.3005452
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta3 0.4069771
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta4 0.5754293
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta5 0.6998646
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta6 0.1532931
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta7 0.1486505
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta8 0.1470191
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta9 0.1437539
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta10 0.1398493
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta11 0.1461094
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta12 0.1675449
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta13 0.1543457
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta14 0.1457311
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta15 0.1432266
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta16 0.1638770
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta17 0.1423302
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta18 0.1349073
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta19 0.1392651
+    avgSEE    avgSEM avgCI meanMissing   n
+ 0.1729352 0.1836921 0.895          10 200
+ 0.2195058 0.2427806 0.910          10 200
+ 0.2678163 0.3244694 0.915          10 200
+ 0.3366508 0.4097352 0.885          10 200
+ 0.3884774 0.4925665 0.890          10 200
+ 0.1684758 0.1689748 0.955          10 200
+ 0.1740791 0.1871036 0.960          10 200
+ 0.1650725 0.1664045 0.945          10 200
+ 0.1606699 0.1799592 0.975          10 200
+ 0.1722883 0.1550350 0.915          10 200
+ 0.1845290 0.1740104 0.935          10 200
+ 0.1696706 0.1789616 0.965          10 200
+ 0.1605304 0.1755603 0.965          10 200
+ 0.1708609 0.1689430 0.945          10 200
+ 0.1875068 0.1663590 0.905          10 200
+ 0.1799877 0.1562326 0.930          10 200
+ 0.1675759 0.1834576 0.955          10 200
+ 0.1680764 0.1812240 0.970          10 200
+ 0.1673703 0.1646608 0.955          10 200
+ 0.1713916 0.1700319 0.945          10 200
+ 0.2992785 0.3462502 0.865          10 200
+ 0.2079943 0.1892634 0.845          30 200
+ 0.2358168 0.2483371 0.860          30 200
+ 0.2779274 0.3330358 0.855          30 200
+ 0.3668463 0.4191724 0.800          30 200
+ 0.4237404 0.5057639 0.780          30 200
+ 0.1916908 0.1724077 0.925          30 200
+ 0.1834261 0.1892865 0.965          30 200
+ 0.1847051 0.1702416 0.925          30 200
+ 0.1833147 0.1826568 0.965          30 200
+ 0.1743367 0.1574261 0.930          30 200
+ 0.1816063 0.1776017 0.945          30 200
+ 0.2056664 0.1832509 0.940          30 200
+ 0.1900849 0.1795158 0.965          30 200
+ 0.1795819 0.1746524 0.970          30 200
+ 0.1815041 0.1706786 0.930          30 200
+ 0.2045883 0.1604904 0.900          30 200
+ 0.1804324 0.1876926 0.950          30 200
+ 0.1690863 0.1837052 0.975          30 200
+ 0.1791852 0.1679254 0.925          30 200

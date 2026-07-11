@@ -1,0 +1,17 @@
+== NUTS tuning on Sim1 | eta=0.4 reps=8 iter=2000 warmup=1000 chains=2 td=13 ==
+Paper Proposed(NUTS) eta bias target: 0.019 (SEE 0.021); betaBias ~0.09
+
+  ad=0.990 rep=1 | 428s | div=0 | eta_hat=0.796 (bias 0.396) | betaBias=0.554
+  ad=0.990 rep=2 | 480s | div=0 | eta_hat=0.375 (bias 0.025) | betaBias=0.597
+  ad=0.990 rep=3 | 532s | div=0 | eta_hat=0.649 (bias 0.249) | betaBias=1.433
+  ad=0.990 rep=4 | 516s | div=0 | eta_hat=0.870 (bias 0.470) | betaBias=0.887
+  ad=0.990 rep=5 | 439s | div=0 | eta_hat=0.409 (bias 0.009) | betaBias=1.025
+  ad=0.990 rep=6 | 433s | div=0 | eta_hat=0.250 (bias 0.150) | betaBias=0.346
+  ad=0.990 rep=7 | 419s | div=155 | eta_hat=0.428 (bias 0.028) | betaBias=0.739
+  ad=0.990 rep=8 | 472s | div=0 | eta_hat=0.854 (bias 0.454) | betaBias=1.236
+共有42个警告 (用warnings()来显示)
+
+Wrote /Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/nuts_sim1_tuned.csv 
+
+ adapt_delta divergences eta_hat eta_absbias eta_sd beta_absbias_mean    secs
+        0.99      19.375   0.579       0.223  0.257             0.852 464.775

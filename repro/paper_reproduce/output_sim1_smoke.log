@@ -1,0 +1,58 @@
+== btaf530 Supplement A2.1 / Simulation 1 ==
+replicates=1 | eta=0.4,1.6,2.8 | ADVI=yes | NUTS=FALSE
+Formula: logit(mu_i) = beta'X_i + eta * mean_neighbor_y_i
+
+-- eta 0.4 replicate 1/1 (seed=100401) --
+Warning: Pareto k diagnostic value is 1.26. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 20.7s
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 19.6s
+
+-- eta 1.6 replicate 1/1 (seed=101601) --
+Warning: Pareto k diagnostic value is 55.78. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 1/1 (seed=102801) --
+Warning: Pareto k diagnostic value is 56.57. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+== Simulation 1 outputs ==
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_raw_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_aggregate_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_timings_n1.csv 
+
+Aggregate preview:
+                 method eta_setting  param    avgBias avgSEE    avgSEM avgCI n
+    Naive Method (ADVI)         0.4  beta1 0.04036894     NA 0.1805914     1 1
+    Naive Method (ADVI)         0.4  beta2 0.39827307     NA 0.2660841     1 1
+    Naive Method (ADVI)         0.4  beta3 0.31364656     NA 0.2867598     1 1
+    Naive Method (ADVI)         0.4  beta4 0.63049233     NA 0.4052056     1 1
+    Naive Method (ADVI)         0.4  beta5 0.94362018     NA 0.4961991     1 1
+    Naive Method (ADVI)         0.4  beta6 0.16226053     NA 0.1835923     1 1
+    Naive Method (ADVI)         0.4  beta7 0.07258131     NA 0.1701319     1 1
+    Naive Method (ADVI)         0.4  beta8 0.09204216     NA 0.1712835     1 1
+    Naive Method (ADVI)         0.4  beta9 0.13420387     NA 0.1810005     1 1
+    Naive Method (ADVI)         0.4 beta10 0.35739433     NA 0.1590386     0 1
+    Naive Method (ADVI)         0.4 beta11 0.10299078     NA 0.1444778     1 1
+    Naive Method (ADVI)         0.4 beta12 0.01916133     NA 0.1646344     1 1
+    Naive Method (ADVI)         0.4 beta13 0.11099158     NA 0.1696112     1 1
+    Naive Method (ADVI)         0.4 beta14 0.03721775     NA 0.1594596     1 1
+    Naive Method (ADVI)         0.4 beta15 0.15738390     NA 0.1591597     1 1
+    Naive Method (ADVI)         0.4 beta16 0.08345563     NA 0.1634292     1 1
+    Naive Method (ADVI)         0.4 beta17 0.02934187     NA 0.1861282     1 1
+    Naive Method (ADVI)         0.4 beta18 0.27321408     NA 0.1489335     1 1
+    Naive Method (ADVI)         0.4 beta19 0.13486505     NA 0.1651756     1 1
+    Naive Method (ADVI)         0.4 beta20 0.01533776     NA 0.1779130     1 1
+ Proposed Method (ADVI)         0.4  beta1 0.06046860     NA 0.1755672     1 1
+ Proposed Method (ADVI)         0.4  beta2 0.49915143     NA 0.2551302     1 1
+ Proposed Method (ADVI)         0.4  beta3 0.36267793     NA 0.3140127     1 1
+ Proposed Method (ADVI)         0.4  beta4 0.78849637     NA 0.4262630     1 1
+ Proposed Method (ADVI)         0.4  beta5 1.10667485     NA 0.5394547     0 1
+ Proposed Method (ADVI)         0.4  beta6 0.09652304     NA 0.1795253     1 1
+ Proposed Method (ADVI)         0.4  beta7 0.13095761     NA 0.1791879     1 1
+ Proposed Method (ADVI)         0.4  beta8 0.08997888     NA 0.1673133     1 1
+ Proposed Method (ADVI)         0.4  beta9 0.12313638     NA 0.1730108     1 1
+ Proposed Method (ADVI)         0.4 beta10 0.38051300     NA 0.1528416     0 1

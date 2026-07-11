@@ -1,0 +1,118 @@
+== btaf530 Supplement A2.3 / Simulation 3 ==
+replicates=1 | eta=1.6 | impute_iter=1 | ADVI missing first-pass
+
+-- 10 Missing Spots replicate 1/1 (seed=301001) --
+   missing spots: 10
+   missing ADVI 19.1s
+
+-- 30 Missing Spots replicate 1/1 (seed=302001) --
+   missing spots: 30
+Warning: Pareto k diagnostic value is 1.32. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.3s
+
+-- gamma=(-6,1,4) replicate 1/1 (seed=303001) --
+   missing spots: 5
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   missing ADVI 0.2s
+
+-- gamma=(-5,1,1.6) replicate 1/1 (seed=304001) --
+   missing spots: 12
+Warning: Pareto k diagnostic value is 1.25. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   missing ADVI 0.2s
+
+== Simulation 3 outputs ==
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_raw_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_aggregate_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_timings_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim3_missing_counts_n1.csv 
+
+Missing counts:
+           setting missing.mean missing.min missing.max
+1 10 Missing Spots           10          10          10
+2 30 Missing Spots           30          30          30
+3 gamma=(-5,1,1.6)           12          12          12
+4   gamma=(-6,1,4)            5           5           5
+
+Aggregate preview:
+                    method          setting      kind  param     avgBias avgSEE
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta1 0.267042083     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta2 0.266940630     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta3 0.062197100     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta4 0.516567910     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta5 0.269090590     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta6 0.104953598     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta7 0.107666862     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta8 0.021952148     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable  beta9 0.141789985     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta10 0.040322977     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta11 0.362849867     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta12 0.230627493     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta13 0.003370762     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta14 0.219783917     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta15 0.139055062     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta16 0.097242814     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta17 0.016408640     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta18 0.061135957     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta19 0.062762800     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable beta20 0.229976842     NA
+ Missing first-pass (ADVI) 10 Missing Spots ignorable    eta 0.128525585     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta1 0.142733753     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta2 0.476496380     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta3 0.131584750     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta4 0.185667900     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta5 0.028366930     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta6 0.125662750     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta7 0.101692740     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta8 0.063498689     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable  beta9 0.050953066     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta10 0.172489673     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta11 0.132855561     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta12 0.158673898     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta13 0.143961397     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta14 0.168528103     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta15 0.047361036     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta16 0.025283328     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta17 0.067042510     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta18 0.008404268     NA
+ Missing first-pass (ADVI) 30 Missing Spots ignorable beta19 0.068744991     NA
+    avgSEM avgCI meanMissing n
+ 0.1665620     1          10 1
+ 0.2048636     1          10 1
+ 0.2859067     1          10 1
+ 0.3090181     1          10 1
+ 0.4132269     1          10 1
+ 0.1487372     1          10 1
+ 0.1752097     1          10 1
+ 0.1522630     1          10 1
+ 0.1771190     1          10 1
+ 0.1387971     1          10 1
+ 0.1520957     0          10 1
+ 0.1573440     1          10 1
+ 0.1664881     1          10 1
+ 0.1442403     1          10 1
+ 0.1383442     1          10 1
+ 0.1378298     1          10 1
+ 0.1542600     1          10 1
+ 0.1525527     1          10 1
+ 0.1403028     1          10 1
+ 0.1476673     1          10 1
+ 0.2971321     1          10 1
+ 0.1754658     1          30 1
+ 0.2669270     1          30 1
+ 0.2987454     1          30 1
+ 0.3896310     1          30 1
+ 0.4405569     1          30 1
+ 0.1765357     1          30 1
+ 0.2027634     1          30 1
+ 0.1615428     1          30 1
+ 0.1864794     1          30 1
+ 0.1437050     1          30 1
+ 0.1617878     1          30 1
+ 0.1719627     1          30 1
+ 0.1891443     1          30 1
+ 0.1539230     1          30 1
+ 0.1541590     1          30 1
+ 0.1513204     1          30 1
+ 0.1777371     1          30 1
+ 0.1701975     1          30 1
+ 0.1618201     1          30 1

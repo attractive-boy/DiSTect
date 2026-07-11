@@ -1,0 +1,1494 @@
+===== PAGE 1 =====
+Gene expression
+DiSTect: a Bayesian model for disease-associated gene 
+discovery and prediction in spatial transcriptomics
+Qicheng Zhao
+1
+, Anji Deng
+1
+, Qihuang Zhang
+1 ,
+�
+1
+Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Quebec H3A 1G1, Canada
+�
+Corresponding author. Department of Epidemiology, Biostatistics and Occupational Health, McGill University, 2001 McGill College Avenue, Montreal, 
+Quebec H3A 1G1, Canada. E-mail: qihuang.zhang@mcgill.ca.
+Associate Editor: Christina Kendziorski
+Abstract
+Motivation: Identifying disease-indicative genes is critical for deciphering disease mechanisms and has attracted significant interest in biomedi -
+cal research. Spatial transcriptomics offers unprecedented insights for the detection of disease-associated genes by enabling within-tissue 
+contrasts. However, this new technology poses challenges for conventional statistical models developed for RNA-sequencing, as these models 
+often neglect the spatial corrleation of the disease status among tissue spots.
+Results: In this article, we propose DiSTect, a Bayesian shrinkage model to characterize the relationship between high-dimensional gene 
+expressions and the disease status of each tissue spot, incorporating spatial correlation among these spots through autoregressive terms. Our 
+model adopts a hierarchical structure to facilitate the analysis of multiple correlated samples and is further extended to accommodate the miss -
+ing data within tissues. To ensure the model’s applicability to datasets of varying sizes, we carry out two computational frameworks for 
+Bayesian parameter estimation, tailored to both small and large sample scenarios. Simulation studies are conducted to evaluate the perfor -
+mance of the proposed model. The proposed model is applied to analyze the data arising from studies of HER2þ breast cancer and 
+Alzheimer’s disease.
+Availability and implementation: The dataset and source code are available on GitHub ( https://github.com/StaGill/DiSTect ) and Zenodo 
+( https://zenodo.org/records/17127211 ).
+1 Introduction
+Complex diseases often involve dysregulation at the cellular 
+level that may not be uniformly distributed across tissues. To 
+decipher the functions of cells in multicellular organisms and 
+the mechanisms of complex diseases, understanding the rela -
+tionship between high-dimensional gene expression data and 
+disease status is crucial. The initial sequencing approaches 
+were conducted on bulk tissue ( Li and Wang 2021 ). 
+Although economical, these approaches lacked the resolution 
+to capture the heterogeneity of disease status within tissues. 
+In contrast, single-cell RNA-seq (scRNA-seq) profiles gene 
+expression in a single-cell resolution, providing a within- 
+tissue contrast of disease status ( Sant et al. 2023 ). Such a 
+contrast naturally introduces a matched design, bringing the 
+opportunity to control for potential confounders. Recently, 
+the advances in spatial transcriptomics ( Ståhl et al. 2016 ) en -
+able maintaining the spatial context of the tissue while profil -
+ing gene expressions. Its technical procedure involves 
+capturing and sequencing RNA in situ, thereby preserving the 
+spatial organization of the cellular gene expressions within 
+the tissue architecture.
+With the emergence of these novel types of data, identify -
+ing informative genes that can decipher biological mecha -
+nisms has become a keen area of interest. One key category 
+of these genes is spatially variable genes. Within this scope, 
+current works ( Svensson et al. 2018 , Shang et al. 2025 , etc.) 
+highlight the importance of genes in understanding spatial 
+heterogeneity within tissues and their potential in revealing 
+complex biological insights that traditional transcriptomics 
+techniques cannot provide. Such a framework identifies genes 
+that capture spatial variation and is therefore used as a cru -
+cial preprocessing step to reduce the number of genes before 
+performing downstream tasks involving spatial variation, 
+such as tissue segmentation ( Li and Zhou 2022 ), cell recovery 
+( Zhang et al. 2023 ), and resolution enhancement ( Zhang 
+et al. 2024 ). On the other hand, while these detected genes 
+are strongly representative of spatial patterns, they are not 
+necessarily indicative of diseases. Hence, our focus is on the 
+second type of interesting genes, disease-associated genes. 
+They are crucial in understanding the relationship between 
+high-dimensional gene expression data and disease status, 
+and thus informing insights for diagnosis and therapeutic 
+strategies. Identifying disease-associated genes has been ex -
+tensively studied using bulk RNA-seq data, including works 
+by Bauer et al. (2008) , Guala et al. (2014) , Leiserson et al. 
+(2015) , and scRNA-seq data ( Ruan and Wang 2021 ), but it is 
+scarcely explored in spatial transcriptomics. Motivated by 
+this, we propose a high-dimensional Bayesian model, DiSTect 
+(DiSease DeTector), to efficiently detect the disease- 
+associated genes accommodating for the spatial structure of 
+transcriptomics data and can be adapted for new tissue sam -
+ples, serving as a predictive tool to identify disease regions 
+and assist in diagnosis.
+Received: 17 April 2025; Revised: 25 August 2025; Accepted: 14 September 2025 
+© The Author(s) 2025. Published by Oxford University Press.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which 
+permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited. 
+Bioinformatics, 2025, 41(10), btaf530 
+https://doi.org/10.1093/bioinformatics/btaf530 
+Advance Access Publication Date: 22 September 2025 
+Original Paper 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 2 =====
+DiSTect addresses three challenges imposed by the special 
+data structure of spatial transcriptomics: high dimensionality, 
+missing data, and computation burden.
+Firstly, disease mechanisms can be driven by the simulta -
+neous interaction of multiple genes, this requires us to con -
+sider modeling the additive effects of these genes collectively. 
+That is, our focus will be on the conditional effects of each 
+gene in the presence of others, which is extremely challenging 
+due to high dimensionality. At present, dimension reduction 
+techniques have been introduced for analyzing gene expres -
+sions (e.g. Sorzano et al. 2014 , Feng et al. 2020 ). However, 
+the existing methods for reducing dimensions mainly focus 
+on a specific goal, such as extracting features for clustering, 
+which are not general enough for identifying disease- 
+associated genes, let alone for handling data with spatial 
+correlations. To fill in this gap, we employed a Bayesian 
+shrinkage model to effectively manage the association analy -
+sis in high-dimensional data.
+Secondly, the presence of missing data complicates infer -
+ence. In spatial transcriptomics, missing data affect both gene 
+expression (predictors) and disease status (responses) at the 
+same locations, meaning that if a spot is missing, neither its 
+predictor nor its response is observed. This missing pattern 
+often arises due to sample collection procedures or experi -
+mental errors, such as when a small section of tissue is cut 
+out or not sampled ( Lopez et al. 2019 ) while separating a 
+slice of sample from the bulk tissue. Therefore, missingness is 
+likely to exhibit spatial correlations, i.e. when one spot is 
+missing, its neighboring spots are more likely to be missing, 
+which further complicates the missing mechanism. In this ar -
+ticle, we discuss missingness to be ignorable or nonignorable 
+and address scenarios where the mechanism involves auto -
+correlation among spots.
+Thirdly, spatial transcriptomics data often include a large 
+number of spots, genes, and slices. With the decreasing costs 
+of generating new datasets, it is crucial to ensure that the 
+methods are scalable to large datasets. DiSTect allows users 
+to choose the implementation methods between No-U-Turn 
+Sampler (NUTS) ( Hoffman et al. 2014 ) and variational infer -
+ence, with a trade-off based on their priority between preci -
+sion and computational efficiency.
+The detailed workflow of DiSTect is illustrated in Fig. 1 . 
+Leveraging a Bayesian spatial autologistic regression with 
+spike-and-slab priors, DiSTect enables four downstream analy -
+ses: (i) The model identifies disease-associated genes whose 
+spatial expression patterns are associated with disease status, 
+supporting genetic biomarker discovery. (ii) Gene–gene inter -
+actions are examined by fitting pairwise interaction terms 
+among selected genes, allowing exploration of potential regula -
+tory effects relevant to disease. (iii) Posterior estimates from 
+the model are used to predict disease status in a new unlabeled 
+tissue. (iv) The model also imputes missing disease labels in 
+spatial regions with unobserved measurements by leveraging 
+local spatial context and gene expression.
+Figure 1. DiSTect analyzes Spatial Transcriptomics data from single or multiple tissue slices to identify genes strongly associated with disease status 
+using a Bayesian spatial spike-and-slab model. The model explicitly accounts for within-slice spatial autocorrelation, between-slice correlation, and 
+incorporates variable selection via a spike-and-slab prior. DiSTect facilitates four primary analytical tasks: (1) identification of disease-associated genes, 
+(2) discovery of effect modification and regulatory structures among genes, (3) annotation of disease status for each spot in new Spatial Transcriptomics 
+datasets, and (4) imputation of disease information for missing spots.
+2                                                                                                                                                                                                                                       Zhao et al. 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 3 =====
+2 Model setup
+2.1 Main model
+For i ¼ 1; . . . ; n, let Y
+i 
+2 f0; 1g be a binary variable to denote 
+the disease status captured on spot i with a two-dimensional 
+location coordinate s
+i
+. For each i, consider d-dimensional 
+covariates X
+i 
+¼ ðX
+i1
+; . . .; X
+id
+Þ
+>
+with X
+ik 
+denoting the expres -
+sion level of gene k on spot i. Let μ
+i
+¼ EðY
+i
+Þ. We consider the 
+association of Y
+i 
+and X
+i 
+as postulated by the model: 
+logitðμ
+i
+Þ ¼ β
+>
+X
+i
+þ
+X
+j6¼i
+η
+ij
+Y
+j
+; (1) 
+where β is the associated covariate parameter of primary in -
+terest, logit(c) ¼ log(
+c
+1 − c
+) and η
+ij 
+are dependence parameters 
+characterizing the correlations between the outcomes ob -
+served at different spots.
+Without extra constraints, model identifiability issue arises 
+as the number of parameters is greater than n. Hence, 
+assumptions are often made to reduce the number of parame -
+ters. Here, we consider restricting the correlations with spots 
+i into its neighbor set, N ðiÞ ¼ fj : jjs
+i
+− s
+j
+jj
+2
+≤ δg, with s
+i 
+and s
+j 
+being the locations of spots i and j, respectively, and δ being a 
+pre-specified threshold. This gives a pairwise dependencies 
+assumption, 
+PðY
+i
+j
+~
+Y
+r
+;
+~
+Y
+t
+Þ ¼ PðY
+i
+j
+~
+Y
+r
+Þ;
+where 
+~
+Y
+r
+¼ fY
+r
+; r 2 N ðiÞg, 
+~
+Y
+t
+¼ fY
+t
+; t 62 N ðiÞg and the thresh -
+old δ is often taken as 1, i.e. the neighbor set is taken as the 
+most adjacent spots. In practice, isotropic assumptions are of -
+ten introduced, as suggested by Hughes et al. (2011) , for the 
+model presented in Equation (1) . This implies that the effects 
+of different neighboring units are assumed to be identical, 
+reflecting the assumption that spatial correlation strength 
+decays with distance but is directionally uniform, which is a 
+reasonable approximation for tissues with relatively homoge -
+neous architecture, such as germinal centers in lymphoid tis -
+sue ( Oh et al. 2025 ) or undifferentiated zones within solid 
+tumors ( Du et al. 2023 ). Specifically, we define η
+ij
+¼
+η
+jN ðiÞj
+> 0 
+for i; j ¼ 1; . . . ; n, where η
+ij 
+represents the average autocorrela -
+tion factor contributed by a single neighboring unit, and 
+jN ðiÞj denotes the cardinality of the neighborhood set for 
+unit i, which is introduced to account for boundary effects, as 
+detailed in Section 2.3.
+Considering both pairwise dependencies and isotropic 
+assumptions, stemming from Equation (1) , a restricted auto -
+logistic model is given by: 
+logitðμ
+i
+Þ ¼ β
+>
+X
+i
+þ
+η
+jN ðiÞj
+X
+j2N ðiÞ
+Y
+j
+: (2) 
+We comment that in the field of spatial transcriptomics, 
+both the pairwise dependencies and isotropic assumptions 
+are frequently considered. For example, Zhu et al. (2018)
+considered that the spatial dependencies only depend on im -
+mediate neighboring spots. On the other hand, the proposed 
+model (1) has the room to accommodate dependencies at 
+greater distances by modulating the value of δ. The isotropic 
+assumption stems from biological homogeneity, suggesting 
+that in various tissues, the absence of a predominant direction 
+of gene expression might be anticipated. Furthermore, with 
+many sequencing-based gene expression profiling techniques 
+such as 10X Visium, the resolution might not be sufficiently 
+high enough to discern fine-grained directional patterns.
+2.2 Joint modeling of multiple slices
+In spatial transcriptomics, it is common that multiple slices 
+from the same tumor tissue are collected and sequenced, 
+which are often referred to as biological replicates. For in -
+stance, 10X Visium platform allows for generating spatial 
+transcriptomic data for four serial slices ( Marx 2021 ), en -
+abling statistical analysis with a larger sample size. However, 
+in such a scenario, batch effects may be the main concern and 
+thus need to be adjusted for via statistical modeling.
+In this section, we extend the model (2) to jointly model 
+the multiple slices. We first introduce c ¼ 1; . . . ; C to denote 
+the index of tissue donors, where C is the total number of tis -
+sue donors. Then, for participant c, a total of G
+c 
+slices are 
+collected and we index each tissue slice by g
+c
+¼ 1; . . . ; G
+c
+. 
+Without the loss of generality, we consider G
+1
+¼ G
+2
+¼ � � � ¼
+G
+c
+¼ G and hence suppress the subscript c in g
+c 
+into g. We 
+further incorporate these indices into X
+i 
+and Y
+i 
+to indicate 
+their source of slices, resulting in X
+cgi 
+and Y
+cgi
+, respectively. 
+We would assume that tissues from the same participant are 
+correlated, while tissues from different participants are inde -
+pendent. Based on this assumption and definition, we pro -
+pose the following model, 
+logitðμ
+cgi
+Þ ¼ β
+>
+X
+cgi
+þ
+η
+cg
+jN ðiÞj
+X
+j2N ðiÞ
+Y
+cgj
+þ U
+cg
+; (3) 
+where U
+cg 
+is a random effect variable. We assume U
+cg 
+follows 
+Nð0; Σ
+c
+Þ to account for correlation among slices within an in -
+dividual, where the ðs; tÞt h element of Σ
+c 
+is ρ
+st
+σ
+2
+c
+. Hence, the 
+covariance matrix Σ
+c 
+can be fully parameterized. Such a spec -
+ification implicitly assumes U
+c
+1
+g
+1 
+and U
+c
+2
+g
+2 
+are independent 
+for any ðg
+1
+; g
+2
+Þ of c
+1
+6¼ c
+2
+.
+To account for the nature of correlation structure among 
+slices from the same donor, we consider an exchangeable 
+structure assuming that the pairwise correlations are the 
+same, i.e. for 8s 6¼ t, ρ
+st
+¼ ρ and for 8s ¼ t, ρ
+st
+¼ 1. This as -
+sumption makes sense when their processing pipelines are of -
+ten standardized. This consistency allows for the assumption 
+of consistent spatial effects, leading to the constraint that 
+η
+cg
+¼ η for each c and g. Consequently, it is natural to con -
+sider the correlation between two adjacent slices influenced 
+by their relative positions. Under such circumstances, an 
+autoregressive correlation structure would be more appropri -
+ate, where ρ
+st
+¼ ρ
+jg
+s
+− g
+t
+j
+for slices s and t. This option is imple -
+mented in the software package and can be specified by the 
+user based on the biological context.
+2.3 Boundary effect and missing spots
+Model (1) assumes all Y
+j 
+to be observed. However, Y
+j 
+can be 
+unknown under two scenarios. The first one occurs for a spot 
+(e.g. Spot i) on the outer edges. In this case, its neighboring 
+spot (e.g. Spot j) may be unobserved because of the natural 
+boundary of the tissue. Consequently, the spots on the 
+boundary will have fewer number of neighbors than others. 
+Therefore, instead of just using a single parameter to account 
+for autocorrelations η
+ij
+¼ η (e.g. Hughes et al. 2011 ), we ad -
+just it by the number of neighbors in Equation (2) .
+On the other hand, for the missing spots isolated in the in -
+terior of the tissue, their missingness often results from sam -
+ple collection procedure. This missingness cannot be ignored 
+DiSTect                                                                                                                                                                                                                                             3 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 4 =====
+because the corresponding η
+ij 
+might be non-zero. Without 
+proper adjustment, ignoring them will lead parameter estima -
+tion of Equation (1) to be biased, as it is equivalent to forcing 
+η
+ij 
+to be 0. In order to address this, we introduce new nota -
+tions, Y
+obs
+j 
+and Y
+mis
+j
+, respectively, to distinguish the observed 
+and unobserved disease status for spot j, and a binary vari -
+able R
+j 
+to indicate the observation status of Y
+j
+. Then, model 
+(2) can be rewritten as: 
+logitðμ
+i
+Þ ¼ β
+>
+X
+i
+þ
+η
+N ðiÞ
+X
+j2N ðiÞ
+fY
+obs
+j
+R
+j
+þ Y
+j
+mis
+ð1 − R
+j
+Þg; (4) 
+where R
+j 
+is 1 if Y
+j 
+is observed, and otherwise, it would be 0.
+Because biological tissue is naturally continuous and inter -
+connected, the failure of collecting one spot during the slice- 
+collection procedure might increase the chance of the 
+adjacent spot being missed as well, leading to the missing pat -
+tern tending to be autocorrelated. Hence, we consider an 
+autocorrelated missing pattern: 
+R
+i
+=?R
+j
+and R
+i
+?R
+k
+jR
+j
+for k 62 N ðiÞ and j 2 N ðiÞ:
+However, such a complex missing pattern might be ignor -
+able under certain circumstances. For example, the missing 
+spots are often due to errors in the experimental operations 
+such as tissue slicing, where the missingness is independent of 
+the data observed on the tissue. Under this assumption, 
+we consider the missing mechanism to be missing completely 
+at random (MCAR). That is to say, for i ¼ 1; . . . ; n, 
+PðR
+i
+j
+~
+X ;
+~
+Y Þ ¼ PðR
+i
+Þ, where 
+~
+X ¼ ðX
+>
+1
+; . . . ; X
+>
+n
+Þ
+>
+and 
+Y ¼ ðY
+1
+; . . . ; Y
+n
+Þ
+>
+.
+On the other hand, the experimenter’s bias can influence 
+the bias pattern, leading to the missing occurring differently 
+according to the disease outcome. For example, the experi -
+menter might have less incentive to include the normal 
+regions and therefore process them with less care, causing the 
+control region to have a different missing rate compared to 
+the disease region. In this scenario, the ignorable assumption 
+may be no longer reasonable. Instead, we model the missing 
+status of spot i by its outcome as well as its neighboring miss -
+ing status: 
+logit PðR
+i
+¼ 1Þ ¼ γ
+0
+þ γ
+1
+Y
+i
+þ
+γ
+2
+jN ðiÞj
+X
+j2N ðiÞ
+R
+j
+; (5) 
+where γ ¼ ðγ
+0
+; γ
+1
+; γ
+2
+Þ
+>
+are associated parameters. The values 
+of γ
+1 
+and γ
+2 
+determine the complexity of the missingness 
+mechanism. When γ
+2
+6¼ 0, the missing mechanism is subject 
+to spatial autocorrelation. However, when γ
+1
+¼ 0; the miss -
+ingness degenerates into an ignorable form, making model 
+(5) unnecessary and γ
+2 
+to become irrelevant.
+Furthermore, although in Equation (5) only Y
+i 
+is explicitly 
+included in the missingness model, regional disease informa -
+tion of surrounding spot Y
+j 
+is indirectly incorporated through 
+two pathways: (i) R
+i 
+depends on neighboring R
+j
+, each of 
+which depends on Y
+j 
+via model (5), forming the path 
+R
+i
+$ R
+j
+ Y
+j
+; and (ii) since R
+i 
+depends on Y
+i 
+and Y
+i 
+is spa -
+tially correlated with neighboring Y
+j
+, we also have 
+R
+i
+ Y
+i
+$ Y
+j
+. Together, these dependencies allow the model 
+to reflect spatially structured missingness without explicitly 
+including 
+P
+j
+Y
+j
+, and thus avoiding redundancy and identifi -
+ability issues. A visual illustration of these dependency paths 
+is provided in Fig. 1 (middle right).
+3 Methodology
+3.1 Spike and slab autologistic model
+To fulfill variable reduction, we integrate spike and slab pri -
+ors with spike component specified as absolutely continuous 
+spike into the following Bayesian hierarchical models: 
+ðY
+i
+jX
+i
+Þ �
+i:i:d
+Bernouliðμ
+i
+Þ; i ¼ 1; . . . ; n;
+η � Uniformð0; c
+1
+Þ;
+ðβ
+k
+jι
+k
+; τ
+2
+k
+Þ �
+i:i:d
+Normalð0; ι
+k
+τ
+2
+k
+Þ;
+ðι
+k
+jv
+0
+; wÞ �
+i:i:d
+ð1 − wÞδ
+v
+0
+ð�Þ þ wδ
+1
+ð�Þ;
+ðτ
+k
+–2
+jb
+1
+; b
+2
+Þ �
+i:i:d
+Gammaðb
+1
+; b
+2
+Þ; k ¼ 1; . . . ; d;
+w � Uniform½0; 1�;
+(6) 
+where μ
+i 
+is modeled by Equation (1) , c
+1
+, v
+0
+, b
+1
+, b
+2 
+are hyper -
+parameters to be prespecified, δ
+v
+ð�Þ function is a discrete mea -
+sure concentrated at value v, and the choice for v
+0 
+is usually a 
+small value near zero. We comment that this framework is 
+also called Normal Mixture of Inverse Gamma (NMIG) 
+proposed by Ishwaran and Rao (2005) , which takes full ad -
+vantage of the conjugate Inverse Gamma prior for τ
+2
+k 
+and leads to highly efficient computation when applied to 
+high-dimensional datasets.
+3.2 Model with multiple tissue slices available
+To accommodate the scenarios where datasets are collected 
+with multiple replicates of slices from different individuals, as 
+considered in Section 2.2, we extend the model (6). The data- 
+generating process for Y
+i
+jX
+i 
+is now indexed by c, g, and i: 
+Y
+cgi
+jX
+cgi
+�
+i:i:d
+Bernouliðμ
+cgi
+Þ;
+for c ¼ 1; . . .; C; g ¼ 1; . . . ; G; i ¼ 1; . . . ; n, where μ
+cgi 
+is mod -
+eled by Equation (3) . Since Model (3) introduces a latent ran -
+dom effect U
+cg
+, here, we further extend Equation (6) into a 
+Bayesian hierarchical model by including U
+cg
+� MVNð0; Σ
+c
+Þ;
+where σ
+2 
+in Σ
+c 
+are assigned with priors 
+σ
+–2
+c
+�
+i:i:d
+Gamma ðb
+3
+; b
+4
+Þ; for c ¼ 1; . . .; C; and
+ρ � Uniformðb
+5
+; b
+6
+Þ:
+Here, the parameters denoted as b
+3
+, b
+4
+, b
+5
+, b
+6 
+are charac -
+terized as hyperparameters to be specified.
+3.3 Bayesian inference
+Inference about the parameter θ ¼ ðη; β; ι; τ; wÞ
+>
+for Section 
+3.1 or θ ¼ ðη
+cg
+; β; ι; τ; w; U
+cg
+; σ
+c
+; ρÞ
+>
+are carried out by the fol -
+lowing posterior distribution: 
+f ðθjy; xÞ ¼
+f ðθ; yjxÞ
+f ðyjxÞ
+/ f ðyjx; θÞπ ðθÞ; (7) 
+where f ðθ; yjxÞ is the joint distribution of Y and θ conditional 
+on X, π (θ) is the prior distribution of parameter θ.
+4 Inference with missing data
+With the presence of missing data, the inference of the θ starts 
+with the joint distribution of ðY ; RÞ, given by: 
+4                                                                                                                                                                                                                                       Zhao et al. 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 5 =====
+f ðy; rjx; θ; γ Þ ¼ f ðyjx; θÞf ðrjy; γ Þ: (8) 
+Then, the inference based on the observed data is given by: 
+f ðy
+obs
+; rjx; θ; γ Þ ¼
+X
+y
+mis
+f ðy; rjx; θ; γ Þ: (9) 
+When the data is missing completely at random (MCAR), 
+which means that the missing data mechanism R is completely in -
+dependent of Y, Equation (8) can be further factorized as 
+f ðy; rjx; θ; γ Þ ¼ f ðyjx; θÞf ðrjγ Þ:
+This indicates that the likelihood f ðyjx; θÞ is not influenced 
+by the likelihood of f ðrjγ Þ, and hence we can ignore the model 
+of R when conducting the inference of θ and carry out the in -
+ference only via f ðyjx; θÞ. Here, Equation (9) would become: 
+f ðy
+obs
+jx; θ; γ Þ ¼
+X
+y
+mis
+f ðyjx; θ; γ Þ: (10) 
+The inference on (10) involves a summation over all poten -
+tial binary configurations of y
+mi s
+, which can be computation -
+ally expensive when the number of missing spots is substantial. 
+Therefore, we incorporate a data augmentation procedure by 
+treating y
+mi s 
+as a latent variable and imputing them via itera -
+tive multiple imputation with a Gibbs sampler. This is equiva -
+lent to adjusting Equation (6) by considering the separated 
+data-generating process of outcome Y
+i 
+according to whether 
+spot i is observed. Specifically, let M denote the index set of 
+spots are missing, for i ¼ 1; . . . ; n; j 2 N ðiÞ; and k 2 M;
+Y
+mis
+k
+j Y
+obs
+w
+; Y
+mis
+w
+; R
+w
+� Bernoulliðμ
+�
+k
+Þ;
+Y
+obs
+i
+j X
+i
+; Y
+obs
+j
+; Y
+mis
+j
+; R
+j
+�
+i:i:d:
+Bernoulliðμ
+i
+Þ;
+(11) 
+where μ
+�
+k
+¼
+1
+jN ðkÞj
+P
+w2N ðkÞ
+fY
+obs
+w
+R
+w
+þ Y
+mis
+w
+ð1 − R
+w
+Þg, μ
+i 
+follows 
+Equation (4) and jN ðiÞj is the cardinality of N ðiÞ. As we do 
+not observe X
+k 
+for k 2 M, here Y
+mis
+k 
+is imputed according to 
+the proportion of disease spots in the neighboring spots of k.
+When missing is nonignorable, we carry out inference on 
+Equation (9) directly. To facilitate this, we extend (11) to in -
+corporate the missing mechanism of R
+i 
+via Equations (4) and 
+(5) , which gives, for i ¼ 1; . . . ; n; j 2 N ðiÞ; and k 2 M, 
+Y
+obs
+i
+j X
+i
+; Y
+obs
+j
+; Y
+mis
+j
+; R
+j
+�
+i:i:d:
+Bernoulliðμ
+i
+Þ;
+Y
+mis
+k
+� Bernoulliðμ
+�
+k
+Þ;
+R
+i
+j Y
+i
+; R
+j
+� BernoullifPðR
+i
+¼ 1Þg;
+where μ
+�
+k 
+is as in (11) and PðR
+i
+¼ 1Þ is specified in 
+Equation (5) .
+To facilitate parameter estimation, DiSTect offers two imple -
+mentation options: No-U-Turn Sampling (NUTS) and Automatic 
+Differentiation Variational Inference (ADVI). Detailed descrip -
+tions of the implementation procedures are provided in Section 
+A1, available as supplementary data at Bioinformatics online.
+5 Downstream analyses
+After obtaining posterior estimates of parameters from 
+DiSTect, one can conduct four primary downstream analyses, 
+each addressing specific biological and analytical goals:
+i) Disease-specific gene identification. Disease-specific 
+genes can be identified based on the magnitude and sig -
+nificance of their regression coefficients β. Specifically, 
+we rank genes according to standardized effect sizes, de -
+fined as the ratio of each gene’s posterior mean coeffi -
+cient to its posterior SD (analogous to a Z-score). Genes 
+exhibiting large standardized effect sizes were selected, 
+as these indicate strong associations with disease status, 
+enabling targeted biological interpretation and bio -
+marker discovery. 
+ii) Gene–gene interaction discovery. To investigate potential 
+regulatory, we consider pairwise interaction terms 
+among the top-ranked genes selected in the previous 
+step. Specifically, we extend our original logistic regres -
+sion model in Equation (2) by adding interaction terms 
+X
+ik
+X
+il 
+for gene pairs ðk; lÞ among selected genes: 
+logitðμ
+i
+Þ ¼ β
+>
+X
+i
+þ
+X
+ðk;lÞ
+β
+int
+kl
+X
+ik
+X
+il
+þ
+η
+jN ðiÞj
+X
+j2N ðiÞ
+Y
+j
+: (12) 
+We estimate these interaction parameters β
+int
+kl 
+and assess 
+their statistical significance and biological relevance by 
+calculating standardized effect sizes, defined as the poste -
+rior mean divided by the posterior SD. Interaction terms 
+with standardized effect sizes exceeding a threshold of 
+1.96 are retained, indicating the interactions are worthy 
+of further biological exploration. 
+iii) Spatial disease prediction. DiSTect supports predictive 
+annotation of disease status for tissue spots without 
+known labels. Specifically, posterior parameter estimates 
+(
+b
+β ; bη ) from previously analyzed slices or patients are used 
+to compute predictive probabilities of disease status for 
+new unlabeled tissue spots from Equation (2) . The uncer -
+tainty of the prediction can be quantified using the poste -
+rior samples. 
+iv) Missing disease status imputation. Finally, DiSTect prob -
+abilistically imputes missing disease labels arising from 
+technical artifacts or sample preparation issues. For any 
+spot i with missing disease status, posterior predictive 
+distributions conditioned on neighboring observations 
+are used to estimate the probability of disease presence 
+following Equation (5) . 
+6 Simulation studies
+We conduct simulation studies to assess the performance of 
+the proposed model in parameter estimation. We perform 
+three simulation studies to compare the autologistic model 
+(2) with the naive approach, where the spatial patterns are 
+disregarded. In Simulation 1, we consider all the spots are 
+displayed on a single slice; in Simulation 2, we consider that a 
+more complex data structure with the spots may come from 
+different slices; and Simulation 3 includes the situation where 
+missing data are present. Detailed descriptions of each simu -
+lation can be found in Sections A2.1–A2.3, available as sup -
+plementary data at Bioinformatics online.
+In Simulation 1, the naive model generally exhibits larger 
+bias in parameter estimates. In contrast, DiSTect adjusts for 
+spatial effects and consistently achieves lower average bias 
+across various levels of spatial correlation ( Figs B3 and B4 and 
+Tables C1–C3, available as supplementary data at 
+Bioinformatics online). Notably, the NUTS-based implementa -
+tion of our model yields smaller biases compared to the ADVI- 
+DiSTect                                                                                                                                                                                                                                             5 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 6 =====
+based approach. Both methods provide reasonable posterior 
+SD estimates and maintain valid coverage probabilities. 
+However, the variational inference approach (ADVI) offers 
+substantially improved computational efficiency, as reflected in 
+reduced computation time ( Fig. B2, available as supplementary 
+data at Bioinformatics online). We conduct a sensitivity analy -
+sis to assess the impact of misspecifying the parameter δ, which 
+governs the neighborhood size. The results indicate that 
+employing a relatively smaller neighborhood radius leads to ro -
+bust model performance despite the misspecification ( Fig. B5, 
+available as supplementary data at Bioinformatics online). In 
+addition, a separate sensitivity analysis is performed to evalu -
+ate the model’s performance under violations of the isotropic 
+assumption. The findings suggest that the estimation of β 
+remains comparable even when isotropy is not satisfied ( Fig. 
+B6, available as supplementary data at Bioinformatics online). 
+Simulation 2 demonstrates that our model performs robustly 
+in both point and variance estimation across varying degrees of 
+heterogeneity and spatial correlation among slices ( Fig. B7 and 
+Table C4, available as supplementary data at Bioinformatics 
+online). We additionally perform a sensitivity analysis to evalu -
+ate the impact of the misspecification in cross-tissue correla -
+tion. It is shown that the misspecification mainly affects the 
+efficiency of the estimators, not the point estimates ( Fig. B8, 
+available as supplementary data at Bioinformatics online). In 
+Simulation 3, we assess the performance of DiSTect in the pres -
+ence of missing data. Our model continues to yield valid infer -
+ence and substantially lower estimation bias compared to the 
+naive model, under both ignorable and non-ignorable missing 
+data mechanisms ( Figs B9 and B10 and Tables C5 and C6, 
+available as supplementary data at Bioinformatics online).
+7 Analysis of HER2+ breast cancer spatial 
+transcriptomic data
+We illustrate the usage of the proposed method, by applying 
+it to HER2þ breast cancer spatial transcriptomic data 
+( Andersson et al. 2021 ). The datasets include gene expression 
+measurements for over 15 000 genes from eight individuals 
+(labeled with patient ID A–H). Among them, patients A–D 
+have six slices, and patients E–H have three. In each slice, an 
+average of 346 spots is sampled. The disease statuses are 
+manually annotated by the pathologists, and each sampled 
+spot is labeled as either cancer or non-cancer. Our objectives 
+in the study are (i) to identify the genes that are specific to the 
+disease using the proposed model; and (ii) then construct the 
+predictive model to inform the risk of cancer status on each 
+spot for any newly collected spatial transcriptomic sample.
+Before analysis, we first perform preprocessing procedures. 
+A gene filtering procedure is conducted to exclude the genes 
+whose total counts are below 300. As the number of filtered 
+genes are different for each slice, we take a common subset to 
+ensure that only mutual genes are kept for the slices from the 
+same patient. The gene expressions, originally recorded as 
+counts (e.g. denoted as X), undergo a logðX þ 1Þ transforma -
+tion and are converted into a continuous scale. We introduce 
+Y
+i 
+to be a binary variable to denote the outcome according to 
+its disease status, where “0” or “1” stand for whether spot i 
+is located in a non-cancer or cancer region, respectively. 
+Model (3) is used to analyze multiple slices jointly. To accom -
+modate for missingness, we consider the missing mechanism 
+to be ignorable because the major cause of the missingness in 
+this dataset is the tissue-slicing procedure, and no 
+experimental biases are observed or recorded. Hence, we ap -
+ply the strategy for handling ignorable missing in Section 2.3. 
+The specification of hyperparameters is displayed in Table 
+C7, available as supplementary data at Bioinformatics online. 
+The method is implemented by ADVI with a total computa -
+tion time amounted to 25 h and 32 min on a system with an 
+M3 chip and 24 GB memory.
+DiSTect identifies the 30 genes that demonstrate the high -
+est levels of effect-to-standardized-deviation ratio ( Fig. 2a ). 
+To closely examine how the expressions of these genes are as -
+sociated with the spatial pattern of both cancer and non- 
+cancer regions within the tissue, spatial visualization of gene 
+expressions is generated in Fig. 2b and Fig. B11ab, available 
+as supplementary data at Bioinformatics online. For example, 
+the expression level of MCUL1 (
+b
+β ¼ − 1:020, 95% CrI ¼
+½ − 1:024; − 1:016�) is elevated mainly in non-cancer regions 
+and rarely in cancer regions, suggesting its potential role in 
+inhibiting cancer development. The finding is consistent with 
+the results in Fig. 2a that the estimated coefficient for the 
+MUCL1 gene is negative. Similarly, as depicted in Fig. 
+B11ab, available as supplementary data at Bioinformatics on -
+line, the estimated coefficients for the NDRG1 (
+b
+β ¼ 0:777, 
+95% CrI ¼ [0.774, 0.780]) and VEGFA (
+b
+β ¼ 0:752, 95% 
+CrI ¼ [0.749, 0.756]) genes are positive, indicating a likely 
+promotion of cancer development. Interestingly, despite this, 
+the elevated expression locations for these two genes differ, 
+suggesting distinct roles in cancer progression. These findings 
+further support the necessity of modeling disease status by 
+considering multiple gene expressions jointly. In addition, the 
+estimated η is 2.936, 95% CrI=[2.926, 2.946], representing a 
+notable level of spatial autocorrelation among adjacent spots.
+Motivated by these findings, we further investigate 
+whether gene–gene interactions are essential in the cancer de -
+velopment process. We use model (12) by adding the two- 
+way interactions among the selected 30 genes to investigate 
+their effects on cancer. Then, we select the interaction terms 
+with an effect-to-standardized-deviation ratio >1.96 
+( Fig. 2c ). Numerous gene–gene interactions are strongly in -
+dicative of the disease status. Notably, we identify several 
+hub genes (e.g. SCD and ERBB2) according to their extensive 
+correlations within many other genes. In addition, VEGFA is 
+known to be related to the proliferation and migration of vas -
+cular endothelial cells, which secure a blood supply for 
+growth and are hence upregulated in tumor tissues ( Qin et al. 
+2023 ). Through this gene–gene interaction network, we iden -
+tify several genes, such as CXCL10 (
+b
+β ¼ − 1:0908, 95% CrI 
+¼ ½ − 1:0948; − 1:0867�) and MIEN1 (
+b
+β ¼ − 0:0326, 95% 
+CrI ¼ ½ − 0:0367; − 0:0285�), that potentially interact with 
+VEGFA in cancer progression.
+We compare DiSTect with existing approaches for identify -
+ing differentially expressed genes (DEGs), such as Giotto 
+( Dries et al. 2021 ), as well as methods for detecting spatially 
+variable genes (SVGs), including SpatialDE ( Svensson et al. 
+2018 ), Celina ( Shang et al. 2025 ), PROST ( Liang et al. 
+2024 ), and MERINGUE ( Miller et al. 2021 ). We first exam -
+ine the overlap between the genes identified by DiSTect and 
+those selected by benchmark methods. For DEGs detected us -
+ing Giotto, only two genes overlapped with DiSTect, while 
+the majority of genes are unique to each method ( Fig. 2d ). 
+For SVG methods, since they do not support multi-slice 
+analysis, we apply them to individual slices and select the top 
+30 genes per slice. Across methods, the overlap with DiSTect- 
+selected genes is generally low ( Fig. 2e ), highlighting 
+6                                                                                                                                                                                                                                       Zhao et al. 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 7 =====
+substantial differences in gene prioritization. These findings 
+suggest that by explicitly accounting for conditional depen -
+dence and disease context, DiSTect provides complementary 
+information to existing approaches for gene discovery. We 
+further evaluate predictive performance using cross- 
+validation at both within-patient and cross-patient levels. 
+The within-patient analysis uses a 3-fold cross-validation per 
+individual, while the cross-patient setting follows a leave- 
+one-patient-out strategy. For each method, we select the top 
+30 ranked genes to fit a two-way interaction model via 
+DiSTect and perform prediction. For SVG-based methods, 
+the 30 genes are selected from only one randomly chosen slice 
+within the training dataset due to the lack of support for 
+multi-slice analysis, while for other methods the 30 genes are 
+identified from the entire set of training data. In addition, we 
+also compare the results to a random forest trained on all 
+available genes. DiSTect consistently outperform all compet -
+ing methods in both evaluation settings ( Fig. 2f ), with repre -
+sentative deterministic prediction exhibited in Fig. 2g and 
+Fig. B11(d–h), available as supplementary data at 
+Bioinformatics online in the Materials.
+In addition to evaluating methods in decision-making as 
+reflected by the deterministic predictions, we also investigate 
+the uncertainty of predictions across the entire tissue by 
+evaluating the predicted bμ at each spot. Typically, a predic -
+tion is more uncertain when the predicted probability bμ is 
+closer to 0.5. Conversely, the prediction is more confident. 
+As illustrated in Fig. 2h , while the prediction is generally con -
+sistent with the ground truth annotations, a strong heteroge -
+neity in prediction confidence is observed across the tissue. In 
+particular, spots around the boundary between the cancer re -
+gion and the non-cancer region tend to exhibit a greater un -
+certainty. This is expected because the transition zone 
+between different tissue types often contains cells with mixed 
+morphological and molecular characteristics, leading to 
+higher ambiguity in classification. Cancer cells can infiltrate 
+and intermingle with normal cells, creating changes that com -
+plicate the distinction between regions, thus increasing pre -
+diction uncertainty ( Scimeca et al. 2014 ).
+Lastly, we explore how DiSTect can utilize information 
+from gene expression patterns to impute unknown disease 
+status for missing spots in spatial transcriptomics. As an ex -
+ample, for patient A slice 2, DiSTect generates posterior 
+probabilities indicating the likelihood that each missing spot 
+belongs to the disease group. The probabilistic imputation 
+results are presented in Fig. 2i . These imputed disease statuses 
+demonstrate strong spatial coherence with the surrounding 
+observed spots.
+Figure 2. Disease-associated genes, interactions, overlap with baselines, and DiSTect outputs. (a) Posterior absolute coefficient values (j
+b
+β j) with 95% 
+credible intervals for the 30 top-ranked genes; color encodes direction of association (red, upregulated; green, downregulated). (b) Spatial expression of 
+MUCL1; darker dots indicate higher normalized expression. The orange contour delineates the ground-truth boundary between cancer and non-cancer 
+regions; blue x marks missing spots. (c) Pairwise interaction network among the top 30 genes. An edge is drawn when the standardized interaction 
+effect (posterior mean/posterior SD) exceeds 1.96; edge width is proportional to effect magnitude. (d) The overlap genes between DiSTect and Giotto. (e) 
+Overlap counts between DiSTect-selected genes and SVGs from Celina, MERINGUE, PROST, and SpatialDE (per-slice, top-30 comparison). (f) Prediction 
+accuracy under cross-patient (leave-one-patient-out) and within-patient (3-fold) evaluations across methods. (g) Thresholded disease predictions from 
+DiSTect (probability > 0:5); black, predicted cancer; green, predicted non-cancer. Orange contour and blue x as in (b). (h) Posterior predictive probabilities 
+bμ
+i 
+for each spot from DiSTect; grayscale indicates P ðdiseaseÞ. (i) Imputation for missing spots: posterior P ðdiseaseÞ is shown at missing locations only; 
+observed spots are indicated by blue “–” symbols.
+DiSTect                                                                                                                                                                                                                                             7 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 8 =====
+Generalization across diseases and platforms
+To assess generalizability beyond HER2þ breast cancer and 
+10X Visium, we evaluate DiSTect on a STARmap PLUS data -
+set from the mouse brain with Alzheimer’s pathology ( Zeng 
+et al. 2023 ). We focus on two 13-month disease replicates 
+and defined disease labels by proximity to amyloid-β plaques 
+(within 20μm) and set a neighborhood with a 60-pixel radius 
+(approximately four neighbors as in 10X Visium). In 
+Replicate 1, DiSTect identifies eight disease-associated genes, 
+with the top signals (Cst7, Trem2, C1qa, Gfap) concordant 
+with prior findings ( Zeng et al. 2023 ). We also detect a gene– 
+gene interaction consistent with microglial activation, where 
+Hexb modulated the effect of Trem2. For prediction on 
+Replicate 2, DiSTect achieves 97.1% accuracy, compared 
+with 96.8% using DEGs selected by Giotto; a model based 
+on MERINGUE SVGs produces no positive calls in this data -
+set. Full analyses, figures, and implementation details are pro -
+vided in Section A3, Fig. B12, available as supplementary 
+data at Bioinformatics online.
+8 Discussion
+In this article, we introduce a Bayesian shrinkage spatial 
+model that incorporates a spike-and-slab prior to identify the 
+disease-specific genes and construct predictive models to in -
+form cancer diagnosis. The shrinkage prior of the Bayesian 
+spatial model enables the selection of the key relationships by 
+shrinking negligible coefficients to zero. This interpretable 
+approach facilitates both the selection of relevant genes for 
+the disease and the prediction on new data. Additionally, we 
+extend our model to address missing data and model multiple 
+slices simultaneously, thereby enhancing its applicability to 
+various settings of cancer genomics studies and enabling the 
+potential of multi-site analysis.
+It is well recognized that spatial transcriptomics platforms 
+differ in spatial resolution, raising the question of whether 
+the neighborhood size parameter δ should be adapted accord -
+ingly. We recommend a conservative default of δ ¼ 1 for 
+lower-resolution platforms such as 10X Visium, and for 
+single-cell-resolution data (e.g. MERFISH or Xenium), a 
+choice that includes approximately 30–50 cells per neighbor -
+hood to mimic the effective coverage of δ ¼ 1 in lower- 
+resolution settings. Sensitivity analysis is advised for tissues 
+with broader spatial autocorrelation. To our knowledge, no 
+systematic study has examined the relationship between plat -
+form resolution and optimal neighborhood size for spatial 
+modeling, and this remains an open area for further investiga -
+tion. In addition, while our framework captures regional de -
+pendence indirectly, explicitly modeling R
+i 
+as a function of 
+aggregated neighboring outcomes (e.g. 
+P
+j2N ðiÞ
+Y
+j
+) could bet -
+ter address region-level, disease-dependent missingness and is 
+a promising extension. Finally, DiSTect currently assumes ex -
+changeable ρ
+st 
+and isotropic η
+ij
+, which are reasonable for rela -
+tively homogeneous tissue regions but may be less 
+appropriate in heterogeneous microenvironments with strong 
+directional structures. Allowing η
+ij 
+to vary spatially or incor -
+porating directional kernels could better capture such anisot -
+ropy in future implementations.
+Our evaluation relies on within-patient cross-validation 
+and leave-one-patient-out testing, which quantify internal 
+generalization but not external transfer. When suitably 
+matched external datasets become available, ideally with the 
+same platform, tissue context, and comparable processing by 
+independent experimenters, DiSTect can be benchmarked to 
+assess out-of-cohort performance.
+Author contributions
+Qicheng Zhao (Formal analysis [lead], Investigation [lead], 
+Methodology [equal], Software [equal], Visualization [sup -
+porting], Writing—original draft [equal], Writing—review & 
+editing [supporting]), Anji Deng (Software [equal], 
+Visualization [equal], Writing—review & editing [support -
+ing]), and Qihuang Zhang (Conceptualization [lead], Funding 
+acquisition [lead], Investigation [equal], Methodology [equal], 
+Project administration [lead], Supervision [lead], Writing— 
+original draft [equal], Writing—review & editing [lead])
+Supplementary data
+Supplementary data are available at Bioinformatics online.
+Conflict of interest: None declared.
+Funding
+This research was supported by the Natural Sciences and 
+Engineering Research Council of Canada (NSERC) and 
+Canadian Statistical Sciences Institute (CANSSI) Quebec. 
+Zhang is a Fonds de recherche du Qu �ebec Research Scholar 
+(Junior 1). His research was undertaken, in part, thanks to 
+funding from the FRQ-Sant �e Program.
+Data availability
+All codes and data involved in this paper are available on 
+Github ( https://github.com/StaGill/DiSTect ).
+References
+Andersson A, Larsson L, Stenbeck L et al. Spatial deconvolution of 
+HER2-positive breast cancer delineates tumor-associated cell type 
+interactions. Nat Commun 2021;12:6012.
+Bauer S, Horn D, Robinson P et al. Walking the interactome for priori -
+tization of candidate disease genes. Am J Hum Genet 2008; 
+82:949–58.
+Dries R, Zhu Q, Dong R et al. Giotto: a toolbox for integrative analysis 
+and visualization of spatial expression data. Genome Biol 2021; 
+22:78.
+Du J, An Z-J, Huang Z-F et al. Novel insights from spatial transcrip -
+tome analysis in solid tumors. Int J Biol Sci 2023;19:4778–92.
+Feng C, Liu S, Zhang H et al. Dimension reduction and clustering mod -
+els for single-cell RNA sequencing data: a comparative study. Int J 
+Mol Sci 2020;21:2181.
+Guala D, Sj €olund E, Sonnhammer ELL. Maxlink: network-based priori -
+tization of genes tightly linked to a disease seed set. Bioinformatics 
+2014;30:2689–90.
+Hoffman MD, Gelman A et al. The No-U-Turn sampler: adaptively set -
+ting path lengths in Hamiltonian Monte Carlo. J Mach Learn Res 
+2014;15:1593–623.
+Hughes J, Haran M, Caragea PC. Autologistic models for binary data 
+on a lattice. Environmetrics 2011;22:857–71.
+Ishwaran H, Rao JS. Spike and slab variable selection: frequentist and 
+Bayesian strategies. Ann Statist 2005;33:730–73.
+Leiserson MDM, Vandin F, Wu H-T et al. Pan-cancer network analysis 
+identifies combinations of rare somatic mutations across pathways 
+and protein complexes. Nat Genet 2015;47:106–14.
+Li X, Wang C-Y. From bulk, single-cell to spatial RNA sequencing. Int 
+J Oral Sci 2021;13:36.
+8                                                                                                                                                                                                                                       Zhao et al. 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025
+
+
+===== PAGE 9 =====
+Li Z, Zhou X. BASS: multi-scale and multi-sample analysis enables ac -
+curate cell type clustering and spatial domain detection in spatial 
+transcriptomic studies. Genome Biol 2022;23:168.
+Liang Y, Shi G, Cai R et al. Prost: quantitative identification of spatially 
+variable genes and domain detection in spatial transcriptomics. Nat 
+Commun 2024;15:600.
+Lopez R, Nazaret A, Langevin M et al. A joint model of unpaired data 
+from scRNA-seq and spatial transcriptomics for imputing missing 
+gene expression measurements. arXiv, 1905.02269, 2019, preprint: 
+not peer reviewed.
+Marx V. Method of the year: spatially resolved transcriptomics. Nat 
+Methods 2021;18:9–14.
+Miller BF, Bambah-Mukku D, Dulac C et al. Characterizing spatial 
+gene expression heterogeneity in spatially resolved single-cell tran -
+scriptomic data with nonuniform cellular densities. Genome Res 
+2021;31:1843–55.
+Oh T, Baek SH, Hwang E-H et al. Spatiotemporal cellular dynamics of 
+germinal center reaction in coronavirus disease 2019 lung-draining 
+lymph node based on imaging-based spatial transcriptomics. Lab 
+Invest 2025;105:102180.
+Qin H, Xiao Q, Xie Y et al. The relationship between VEGF-460 poly -
+morphism and cancer risk: a systematic review and meta-analysis 
+based on 46 reports. Medicine (Baltimore) 2023;102:e34089.
+Ruan P, Wang S. DiSNEP: a disease-specific gene network enhancement 
+to improve prioritizing candidate disease genes. Brief Bioinform 
+2021;22:bbaa241.
+Sant P, Rippe K, Mallm J-P. Approaches for single-cell RNA sequencing 
+across tissues and cell types. Transcription 2023;14:127–45.
+Scimeca M, Giannini E, Antonacci C et al. Microcalcifications in breast 
+cancer: an active phenomenon mediated by epithelial cells with mes -
+enchymal characteristics. BMC Cancer 2014;14:286–10.
+Shang L, Wu P, Zhou X. Statistical identification of cell type-specific 
+spatially variable genes in spatial transcriptomics. Nat Commun 
+2025;16:1059.
+Sorzano COS, Vargas J, Montano AP. A survey of dimensionality re -
+duction techniques. arXiv, 1403.2877, 2014, preprint: not 
+peer reviewed.
+Ståhl PL, Salm �en F, Vickovic S et al. Visualization and analysis of gene 
+expression in tissue sections by spatial transcriptomics. Science 
+2016;353:78–82.
+Svensson V, Teichmann SA, Stegle O. Spatialde: identification of spa -
+tially variable genes. Nat Methods 2018;15:343–6.
+Zeng H, Huang J, Zhou H et al. Integrative in situ mapping of single- 
+cell transcriptional states and tissue histopathology in a mouse 
+model of Alzheimer’s disease. Nat Neurosci 2023;26:430–46.
+Zhang D, Schroeder A, Yan H et al. Inferring super-resolution tissue ar -
+chitecture by integrating spatial transcriptomics with histology. Nat 
+Biotechnol 2024;42:1372–7.
+Zhang Q, Jiang S, Schroeder A et al. Leveraging spatial transcriptomics 
+data to recover cell locations in single-cell RNA-seq with celery. Nat 
+Commun 2023;14:4050.
+Zhu Q, Shah S, Dries R et al. Identification of spatially associated 
+subpopulations by combining scRNAseq and sequential fluores -
+cence in situ hybridization data. Nat Biotechnol 2018; 
+36:1183–90.
+© The Author(s) 2025. Published by Oxford University Press.
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits 
+unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.
+Bioinformatics, 2025, 41, 1–9
+https://doi.org/10.1093/bioinformatics/btaf530
+Original Paper
+DiSTect                                                                                                                                                                                                                                             9 
+Downloaded from https://academic.oup.com/bioinformatics/article/41/10/btaf530/8261372 by guest on 28 November 2025

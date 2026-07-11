@@ -1,0 +1,8 @@
+== No DATA_RDS given -> SYNTHETIC single-cell dataset (Xenium-like) ==
+  62500 cells x 120 genes | 57% disease | mean count 1.09, 52% zeros
+
+== PG-CAVI at single-cell scale: 62500 cells fit in 13.0s, 10 iters ==
+  eta=0.463 | 0 genes selected @FDR 0.05
+  top disease-associated genes: gene1,gene6,gene5,gene3,gene4,gene2,gene76,gene107 
+
+DONE. (The original O(N^2) log-Gaussian model is infeasible at this N.)

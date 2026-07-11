@@ -1,0 +1,18 @@
+VERIFY_BEGIN 18:07:32
+STEP_START verify_her2 18:07:32
+STEP_DONE verify_her2 rc=0 92s
+STEP_START singlecell 18:09:04
+STEP_DONE singlecell rc=0 19s
+STEP_START nuts_compare 18:09:23
+STEP_DONE nuts_compare rc=0 54s
+STEP_START reproduce 18:10:17
+STEP_DONE reproduce rc=0 62s
+STEP_START her2_reproduce 18:11:19
+STEP_DONE her2_reproduce rc=0 581s
+STEP_START benchmark 18:21:00
+STEP_DONE benchmark rc=0 1581s
+STEP_START plot_scaling 18:47:21
+STEP_DONE plot_scaling rc=0 1s
+STEP_START sim2_scaling 18:47:22
+STEP_DONE sim2_scaling rc=0 12s
+VERIFY_END 18:47:34

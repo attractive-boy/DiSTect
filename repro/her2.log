@@ -1,0 +1,238 @@
+
+
+==========  LOAD 4 patient sections + pathologist annotations  ==========
+  A (A1): 341 spots, 303 cancer (89%)
+  B (B1): 269 spots, 63 cancer (23%)
+  C (C1): 167 spots, 127 cancer (76%)
+  D (D1): 255 spots, 139 cancer (55%)
+
+Genes passing total-count>=300 in ALL sections (common subset): 381
+Design: 1032 spots x 40 HVGs (+2 coords), 4 slices/patients. Cancer rate 61%
+
+
+==========  FIT joint multi-slice DiSTect (ADVI)  ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.097727 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 977.27 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100     -2221137.724             1.000            1.000
+Chain 1:    200     -2221214.868             0.500            1.000
+Chain 1:    300     -2220602.736             0.333            0.000
+Chain 1:    400     -2220026.658             0.000            0.000
+Chain 1:    500     -2219458.231             0.000            0.000
+Chain 1:    600     -2219208.725             0.000            0.000
+Chain 1:    700     -2219388.086             0.000            0.000
+Chain 1:    800     -2219256.601             0.000            0.000
+Chain 1:    900     -2218928.575             0.000            0.000
+Chain 1:   1000     -2218677.305             0.000            0.000
+Chain 1:   1100     -2218535.984             0.000            0.000
+Chain 1:   1200     -2218384.610             0.000            0.000
+Chain 1:   1300     -2218713.696             0.000            0.000
+Chain 1:   1400     -2218336.662             0.000            0.000
+Chain 1:   1500     -2218153.090             0.000            0.000
+Chain 1:   1600     -2218126.863             0.000            0.000
+Chain 1:   1700     -2217988.843             0.000            0.000
+Chain 1:   1800     -2217824.006             0.000            0.000
+Chain 1:   1900     -2217733.783             0.000            0.000
+Chain 1:   2000     -2217789.645             0.000            0.000
+Chain 1:   2100     -2217712.506             0.000            0.000
+Chain 1:   2200     -2217533.723             0.000            0.000
+Chain 1:   2300     -2217498.672             0.000            0.000
+Chain 1:   2400     -2217417.484             0.000            0.000
+Chain 1:   2500     -2217372.590             0.000            0.000
+Chain 1:   2600     -2217233.322             0.000            0.000
+Chain 1:   2700     -2217272.185             0.000            0.000
+Chain 1:   2800     -2217123.008             0.000            0.000
+Chain 1:   2900     -2217108.751             0.000            0.000
+Chain 1:   3000     -2217189.197             0.000            0.000
+Chain 1: Informational Message: The maximum number of iterations is reached! The algorithm may not have converged.
+Chain 1: This variational approximation is not guaranteed to be meaningful.
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+警告: Pareto k diagnostic value is 93.93. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+Fit time: 353.0 s
+
+Top 15 disease-associated genes (by |mean/sd|):
+    gene   coef    sd std_effect
+    TPT1  1.849 0.851       2.17
+   MMP14  1.840 0.873       2.11
+ SCGB2A2  1.565 0.776       2.02
+  COL1A1 -1.599 0.934       1.71
+    PTMS  1.380 0.818       1.69
+     PHB  1.540 0.921       1.67
+   BEST1  1.299 0.786       1.65
+   SERF2 -1.368 0.830       1.65
+   HLA-B -1.385 0.843       1.64
+   PSMD3  1.309 0.837       1.56
+ HLA-DRA  1.291 0.832       1.55
+  TMSB10 -1.353 0.892       1.52
+   COX6C -1.164 0.797       1.46
+     MGP  1.149 0.830       1.38
+   CISD3  1.091 0.815       1.34
+
+Spatial autocorrelation eta = 2.665  (95% CrI [1.589, 3.999])
+警告信息:
+Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead. 
+
+
+==========  Interaction network among top-8 genes  ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.061989 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 619.89 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100     -2224068.875             1.000            1.000
+Chain 1:    200     -2222240.836             0.500            1.000
+Chain 1:    300     -2221529.840             0.334            0.001
+Chain 1:    400     -2220780.244             0.000            0.000
+Chain 1:    500     -2220352.579             0.000            0.000
+Chain 1:    600     -2220836.001             0.000            0.000
+Chain 1:    700     -2219897.961             0.000            0.000
+Chain 1:    800     -2219212.352             0.000            0.000
+Chain 1:    900     -2219260.337             0.000            0.000
+Chain 1:   1000     -2219064.097             0.000            0.000
+Chain 1:   1100     -2218802.353             0.000            0.000
+Chain 1:   1200     -2218495.353             0.000            0.000
+Chain 1:   1300     -2218279.107             0.000            0.000
+Chain 1:   1400     -2218154.815             0.000            0.000
+Chain 1:   1500     -2217996.110             0.000            0.000
+Chain 1:   1600     -2218044.486             0.000            0.000
+Chain 1:   1700     -2217912.112             0.000            0.000
+Chain 1:   1800     -2217777.732             0.000            0.000
+Chain 1:   1900     -2217672.680             0.000            0.000
+Chain 1:   2000     -2218069.280             0.000            0.000
+Chain 1:   2100     -2217512.831             0.000            0.000
+Chain 1:   2200     -2217365.856             0.000            0.000
+Chain 1:   2300     -2217440.317             0.000            0.000
+Chain 1:   2400     -2217234.098             0.000            0.000
+Chain 1:   2500     -2217246.821             0.000            0.000
+Chain 1:   2600     -2217173.054             0.000            0.000
+Chain 1:   2700     -2217098.772             0.000            0.000
+Chain 1:   2800     -2216998.558             0.000            0.000
+Chain 1:   2900     -2217098.042             0.000            0.000
+Chain 1:   3000     -2217064.287             0.000            0.000
+Chain 1: Informational Message: The maximum number of iterations is reached! The algorithm may not have converged.
+Chain 1: This variational approximation is not guaranteed to be meaningful.
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+警告: Pareto k diagnostic value is 98.71. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+Interactions retained (|std effect|>1.96):
+        pair   mean std_effect
+ TPT1*COL1A1 -2.015       2.26
+ SCGB2A2*PHB -2.143       2.52
+    PTMS*PHB -1.925       2.31
+   PHB*BEST1 -1.950       2.13
+
+
+==========  Leave-one-patient-out prediction: train A,B,C -> test D  ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.034579 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 345.79 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100     -1261479.474             1.000            1.000
+Chain 1:    200     -1261409.093             0.500            1.000
+Chain 1:    300     -1260863.373             0.333            0.000
+Chain 1:    400     -1260770.937             0.000            0.000
+Chain 1:    500     -1260441.525             0.000            0.000
+Chain 1:    600     -1260414.827             0.000            0.000
+Chain 1:    700     -1260030.202             0.000            0.000
+Chain 1:    800     -1259630.663             0.000            0.000
+Chain 1:    900     -1259966.720             0.000            0.000
+Chain 1:   1000     -1259427.777             0.000            0.000
+Chain 1:   1100     -1259308.570             0.000            0.000
+Chain 1:   1200     -1259084.607             0.000            0.000
+Chain 1:   1300     -1259167.141             0.000            0.000
+Chain 1:   1400     -1259025.411             0.000            0.000
+Chain 1:   1500     -1258816.665             0.000            0.000
+Chain 1:   1600     -1258659.206             0.000            0.000
+Chain 1:   1700     -1258708.293             0.000            0.000
+Chain 1:   1800     -1258953.008             0.000            0.000
+Chain 1:   1900     -1258493.974             0.000            0.000
+Chain 1:   2000     -1258460.027             0.000            0.000
+Chain 1:   2100     -1258318.302             0.000            0.000
+Chain 1:   2200     -1258246.393             0.000            0.000
+Chain 1:   2300     -1258271.499             0.000            0.000
+Chain 1:   2400     -1258188.853             0.000            0.000
+Chain 1:   2500     -1258169.283             0.000            0.000
+Chain 1:   2600     -1258002.365             0.000            0.000
+Chain 1:   2700     -1258053.611             0.000            0.000
+Chain 1:   2800     -1257929.893             0.000            0.000
+Chain 1:   2900     -1257737.520             0.000            0.000
+Chain 1:   3000     -1257948.761             0.000            0.000
+Chain 1: Informational Message: The maximum number of iterations is reached! The algorithm may not have converged.
+Chain 1: This variational approximation is not guaranteed to be meaningful.
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+警告: Pareto k diagnostic value is 98.86. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+Test patient D: 255 spots | DiSTect acc = 0.631 | majority-class baseline = 0.545
+     predicted
+truth   0   1
+    0  27  89
+    1   5 134
+
+
+==========  HER2 REPRODUCTION DONE  ==========
+Figures: fig_her2_coef.png, fig_her2_network.png in /Users/licheng/Documents/DiSTect/repro 

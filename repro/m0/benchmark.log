@@ -1,0 +1,12 @@
+[done] sparse N=500  fit=0.36s  peakRSS=2295.3MB
+[done] sparse N=1000  fit=0.48s  peakRSS=2261.6MB
+[done] sparse N=2000  fit=0.69s  peakRSS=2321.2MB
+[done] sparse N=3000  fit=0.92s  peakRSS=2226.7MB
+[done] sparse N=10000  fit=2.58s  peakRSS=2262.2MB
+[done] sparse N=30000  fit=7.59s  peakRSS=2186.9MB
+[done] sparse N=100000  fit=27.59s  peakRSS=2204.9MB
+[done] dense N=500  fit=49.09s  peakRSS=2217.7MB
+[done] dense N=1000  fit=172.18s  peakRSS=2183.7MB
+[done] dense N=2000  fit=627.95s  peakRSS=2233.8MB
+[done] dense N=3000  fit=1347.31s  peakRSS=2802.4MB
+BENCHMARK DONE -> repro/m0/scaling.csv

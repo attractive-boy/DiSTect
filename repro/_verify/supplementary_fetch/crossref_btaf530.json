@@ -1,0 +1,593 @@
+{
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+        "indexed": {
+            "date-parts": [
+                [
+                    2025,
+                    10,
+                    17
+                ]
+            ],
+            "date-time": "2025-10-17T00:20:08Z",
+            "timestamp": 1760660408629,
+            "version": "build-2065373602"
+        },
+        "reference-count": 29,
+        "publisher": "Oxford University Press (OUP)",
+        "issue": "10",
+        "license": [
+            {
+                "start": {
+                    "date-parts": [
+                        [
+                            2025,
+                            9,
+                            22
+                        ]
+                    ],
+                    "date-time": "2025-09-22T00:00:00Z",
+                    "timestamp": 1758499200000
+                },
+                "content-version": "vor",
+                "delay-in-days": 0,
+                "URL": "https://creativecommons.org/licenses/by/4.0/"
+            }
+        ],
+        "funder": [
+            {
+                "DOI": "10.13039/501100000038",
+                "name": "Natural Sciences and Engineering Research Council of Canada",
+                "doi-asserted-by": "crossref",
+                "id": [
+                    {
+                        "id": "10.13039/501100000038",
+                        "id-type": "DOI",
+                        "asserted-by": "crossref"
+                    }
+                ]
+            },
+            {
+                "name": "Canadian Statistical Sciences Institute (CANSSI) Quebec"
+            },
+            {
+                "name": "Qu\u00e9bec Research Scholar"
+            },
+            {
+                "name": "FRQ-Sant\u00e9"
+            }
+        ],
+        "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+        },
+        "short-container-title": [],
+        "published-print": {
+            "date-parts": [
+                [
+                    2025,
+                    10,
+                    2
+                ]
+            ]
+        },
+        "abstract": "<jats:title>Abstract</jats:title>\n               <jats:sec>\n                  <jats:title>Motivation</jats:title>\n                  <jats:p>Identifying disease-indicative genes is critical for deciphering disease mechanisms and has attracted significant interest in biomedical research. Spatial transcriptomics offers unprecedented insights for the detection of disease-associated genes by enabling within-tissue contrasts. However, this new technology poses challenges for conventional statistical models developed for RNA-sequencing, as these models often neglect the spatial corrleation of the disease status among tissue spots.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>In this article, we propose DiSTect, a Bayesian shrinkage model to characterize the relationship between high-dimensional gene expressions and the disease status of each tissue spot, incorporating spatial correlation among these spots through autoregressive terms. Our model adopts a hierarchical structure to facilitate the analysis of multiple correlated samples and is further extended to accommodate the missing data within tissues. To ensure the model\u2019s applicability to datasets of varying sizes, we carry out two computational frameworks for Bayesian parameter estimation, tailored to both small and large sample scenarios. Simulation studies are conducted to evaluate the performance of the proposed model. The proposed model is applied to analyze the data arising from studies of HER2+ breast cancer and Alzheimer\u2019s disease.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Availability and implementation</jats:title>\n                  <jats:p>The dataset and source code are available on GitHub (https://github.com/StaGill/DiSTect) and Zenodo (https://zenodo.org/records/17127211).</jats:p>\n               </jats:sec>",
+        "DOI": "10.1093/bioinformatics/btaf530",
+        "type": "journal-article",
+        "created": {
+            "date-parts": [
+                [
+                    2025,
+                    9,
+                    22
+                ]
+            ],
+            "date-time": "2025-09-22T13:26:21Z",
+            "timestamp": 1758547581000
+        },
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+            "DiSTect: a Bayesian model for disease-associated gene discovery and prediction in spatial transcriptomics"
+        ],
+        "prefix": "10.1093",
+        "volume": "41",
+        "author": [
+            {
+                "ORCID": "https://orcid.org/0009-0004-2155-1781",
+                "authenticated-orcid": false,
+                "given": "Qicheng",
+                "family": "Zhao",
+                "sequence": "first",
+                "affiliation": [
+                    {
+                        "name": "Department of Epidemiology, Biostatistics and Occupational Health, McGill University , Montreal, Quebec H3A 1G1,",
+                        "place": [
+                            "Canada"
+                        ]
+                    }
+                ],
+                "role": [
+                    {
+                        "role": "author",
+                        "vocabulary": "crossref"
+                    }
+                ]
+            },
+            {
+                "given": "Anji",
+                "family": "Deng",
+                "sequence": "additional",
+                "affiliation": [
+                    {
+                        "name": "Department of Epidemiology, Biostatistics and Occupational Health, McGill University , Montreal, Quebec H3A 1G1,",
+                        "place": [
+                            "Canada"
+                        ]
+                    }
+                ],
+                "role": [
+                    {
+                        "role": "author",
+                        "vocabulary": "crossref"
+                    }
+                ]
+            },
+            {
+                "ORCID": "https://orcid.org/0000-0003-1455-2159",
+                "authenticated-orcid": false,
+                "given": "Qihuang",
+                "family": "Zhang",
+                "sequence": "additional",
+                "affiliation": [
+                    {
+                        "name": "Department of Epidemiology, Biostatistics and Occupational Health, McGill University , Montreal, Quebec H3A 1G1,",
+                        "place": [
+                            "Canada"
+                        ]
+                    }
+                ],
+                "role": [
+                    {
+                        "role": "author",
+                        "vocabulary": "crossref"
+                    }
+                ]
+            }
+        ],
+        "member": "286",
+        "published-online": {
+            "date-parts": [
+                [
+                    2025,
+                    9,
+                    22
+                ]
+            ]
+        },
+        "reference": [
+            {
+                "key": "2025101607431313100_btaf530-B1",
+                "doi-asserted-by": "crossref",
+                "first-page": "6012",
+                "DOI": "10.1038/s41467-021-26271-2",
+                "article-title": "Spatial deconvolution of HER2-positive breast cancer delineates tumor-associated cell type interactions",
+                "volume": "12",
+                "author": "Andersson",
+                "year": "2021",
+                "journal-title": "Nat Commun"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B2",
+                "doi-asserted-by": "crossref",
+                "first-page": "949",
+                "DOI": "10.1016/j.ajhg.2008.02.013",
+                "article-title": "Walking the interactome for prioritization of candidate disease genes",
+                "volume": "82",
+                "author": "Bauer",
+                "year": "2008",
+                "journal-title": "Am J Hum Genet"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B3",
+                "doi-asserted-by": "crossref",
+                "first-page": "78",
+                "DOI": "10.1186/s13059-021-02286-2",
+                "article-title": "Giotto: a toolbox for integrative analysis and visualization of spatial expression data",
+                "volume": "22",
+                "author": "Dries",
+                "year": "2021",
+                "journal-title": "Genome Biol"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B4",
+                "doi-asserted-by": "crossref",
+                "first-page": "4778",
+                "DOI": "10.7150/ijbs.83098",
+                "article-title": "Novel insights from spatial transcriptome analysis in solid tumors",
+                "volume": "19",
+                "author": "Du",
+                "year": "2023",
+                "journal-title": "Int J Biol Sci"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B5",
+                "doi-asserted-by": "crossref",
+                "first-page": "2181",
+                "DOI": "10.3390/ijms21062181",
+                "article-title": "Dimension reduction and clustering models for single-cell RNA sequencing data: a comparative study",
+                "volume": "21",
+                "author": "Feng",
+                "year": "2020",
+                "journal-title": "Int J Mol Sci"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B6",
+                "doi-asserted-by": "crossref",
+                "first-page": "2689",
+                "DOI": "10.1093/bioinformatics/btu344",
+                "article-title": "Maxlink: network-based prioritization of genes tightly linked to a disease seed set",
+                "volume": "30",
+                "author": "Guala",
+                "year": "2014",
+                "journal-title": "Bioinformatics"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B7",
+                "first-page": "1593",
+                "article-title": "The No-U-Turn sampler: adaptively setting path lengths in Hamiltonian Monte Carlo",
+                "volume": "15",
+                "author": "Hoffman",
+                "year": "2014",
+                "journal-title": "J Mach Learn Res"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B8",
+                "doi-asserted-by": "crossref",
+                "first-page": "857",
+                "DOI": "10.1002/env.1102",
+                "article-title": "Autologistic models for binary data on a lattice",
+                "volume": "22",
+                "author": "Hughes",
+                "year": "2011",
+                "journal-title": "Environmetrics"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B9",
+                "doi-asserted-by": "crossref",
+                "first-page": "730",
+                "DOI": "10.1214/009053604000001147",
+                "article-title": "Spike and slab variable selection: frequentist and Bayesian strategies",
+                "volume": "33",
+                "author": "Ishwaran",
+                "year": "2005",
+                "journal-title": "Ann Statist"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B10",
+                "doi-asserted-by": "crossref",
+                "first-page": "106",
+                "DOI": "10.1038/ng.3168",
+                "article-title": "Pan-cancer network analysis identifies combinations of rare somatic mutations across pathways and protein complexes",
+                "volume": "47",
+                "author": "Leiserson",
+                "year": "2015",
+                "journal-title": "Nat Genet"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B11",
+                "doi-asserted-by": "crossref",
+                "first-page": "36",
+                "DOI": "10.1038/s41368-021-00146-0",
+                "article-title": "From bulk, single-cell to spatial RNA sequencing",
+                "volume": "13",
+                "author": "Li",
+                "year": "2021",
+                "journal-title": "Int J Oral Sci"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B12",
+                "doi-asserted-by": "crossref",
+                "first-page": "168",
+                "DOI": "10.1186/s13059-022-02734-7",
+                "article-title": "BASS: multi-scale and multi-sample analysis enables accurate cell type clustering and spatial domain detection in spatial transcriptomic studies",
+                "volume": "23",
+                "author": "Li",
+                "year": "2022",
+                "journal-title": "Genome Biol"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B13",
+                "doi-asserted-by": "crossref",
+                "first-page": "600",
+                "DOI": "10.1038/s41467-024-44835-w",
+                "article-title": "Prost: quantitative identification of spatially variable genes and domain detection in spatial transcriptomics",
+                "volume": "15",
+                "author": "Liang",
+                "year": "2024",
+                "journal-title": "Nat Commun"
+            },
+            {
+                "year": "2019",
+                "author": "Lopez",
+                "key": "2025101607431313100_btaf530-B14"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B15",
+                "doi-asserted-by": "crossref",
+                "first-page": "9",
+                "DOI": "10.1038/s41592-020-01033-y",
+                "article-title": "Method of the year: spatially resolved transcriptomics",
+                "volume": "18",
+                "author": "Marx",
+                "year": "2021",
+                "journal-title": "Nat Methods"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B16",
+                "doi-asserted-by": "crossref",
+                "first-page": "1843",
+                "DOI": "10.1101/gr.271288.120",
+                "article-title": "Characterizing spatial gene expression heterogeneity in spatially resolved single-cell transcriptomic data with nonuniform cellular densities",
+                "volume": "31",
+                "author": "Miller",
+                "year": "2021",
+                "journal-title": "Genome Res"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B17",
+                "doi-asserted-by": "crossref",
+                "first-page": "102180",
+                "DOI": "10.1016/j.labinv.2024.102180",
+                "article-title": "Spatiotemporal cellular dynamics of germinal center reaction in coronavirus disease 2019 lung-draining lymph node based on imaging-based spatial transcriptomics",
+                "volume": "105",
+                "author": "Oh",
+                "year": "2025",
+                "journal-title": "Lab Invest"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B18",
+                "doi-asserted-by": "crossref",
+                "first-page": "e34089",
+                "DOI": "10.1097/MD.0000000000034089",
+                "article-title": "The relationship between VEGF-460 polymorphism and cancer risk: a systematic review and meta-analysis based on 46 reports",
+                "volume": "102",
+                "author": "Qin",
+                "year": "2023",
+                "journal-title": "Medicine (Baltimore)"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B19",
+                "doi-asserted-by": "crossref",
+                "first-page": "bbaa241",
+                "DOI": "10.1093/bib/bbaa241",
+                "article-title": "DiSNEP: a disease-specific gene network enhancement to improve prioritizing candidate disease genes",
+                "volume": "22",
+                "author": "Ruan",
+                "year": "2021",
+                "journal-title": "Brief Bioinform"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B20",
+                "doi-asserted-by": "crossref",
+                "first-page": "127",
+                "DOI": "10.1080/21541264.2023.2200721",
+                "article-title": "Approaches for single-cell RNA sequencing across tissues and cell types",
+                "volume": "14",
+                "author": "Sant",
+                "year": "2023",
+                "journal-title": "Transcription"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B21",
+                "doi-asserted-by": "crossref",
+                "first-page": "286",
+                "DOI": "10.1186/1471-2407-14-286",
+                "article-title": "Microcalcifications in breast cancer: an active phenomenon mediated by epithelial cells with mesenchymal characteristics",
+                "volume": "14",
+                "author": "Scimeca",
+                "year": "2014",
+                "journal-title": "BMC Cancer"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B22",
+                "doi-asserted-by": "crossref",
+                "first-page": "1059",
+                "DOI": "10.1038/s41467-025-56280-4",
+                "article-title": "Statistical identification of cell type-specific spatially variable genes in spatial transcriptomics",
+                "volume": "16",
+                "author": "Shang",
+                "year": "2025",
+                "journal-title": "Nat Commun"
+            },
+            {
+                "year": "2014",
+                "author": "Sorzano",
+                "key": "2025101607431313100_btaf530-B23"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B24",
+                "doi-asserted-by": "crossref",
+                "first-page": "78",
+                "DOI": "10.1126/science.aaf2403",
+                "article-title": "Visualization and analysis of gene expression in tissue sections by spatial transcriptomics",
+                "volume": "353",
+                "author": "St\u00e5hl",
+                "year": "2016",
+                "journal-title": "Science"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B25",
+                "doi-asserted-by": "crossref",
+                "first-page": "343",
+                "DOI": "10.1038/nmeth.4636",
+                "article-title": "Spatialde: identification of spatially variable genes",
+                "volume": "15",
+                "author": "Svensson",
+                "year": "2018",
+                "journal-title": "Nat Methods"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B26",
+                "doi-asserted-by": "crossref",
+                "first-page": "430",
+                "DOI": "10.1038/s41593-022-01251-x",
+                "article-title": "Integrative in situ mapping of single-cell transcriptional states and tissue histopathology in a mouse model of Alzheimer\u2019s disease",
+                "volume": "26",
+                "author": "Zeng",
+                "year": "2023",
+                "journal-title": "Nat Neurosci"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B27",
+                "doi-asserted-by": "crossref",
+                "first-page": "1372",
+                "DOI": "10.1038/s41587-023-02019-9",
+                "article-title": "Inferring super-resolution tissue architecture by integrating spatial transcriptomics with histology",
+                "volume": "42",
+                "author": "Zhang",
+                "year": "2024",
+                "journal-title": "Nat Biotechnol"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B28",
+                "doi-asserted-by": "crossref",
+                "first-page": "4050",
+                "DOI": "10.1038/s41467-023-39895-3",
+                "article-title": "Leveraging spatial transcriptomics data to recover cell locations in single-cell RNA-seq with celery",
+                "volume": "14",
+                "author": "Zhang",
+                "year": "2023",
+                "journal-title": "Nat Commun"
+            },
+            {
+                "key": "2025101607431313100_btaf530-B29",
+                "doi-asserted-by": "crossref",
+                "first-page": "1183",
+                "DOI": "10.1038/nbt.4260",
+                "article-title": "Identification of spatially associated subpopulations by combining scRNAseq and sequential fluorescence in situ hybridization data",
+                "volume": "36",
+                "author": "Zhu",
+                "year": "2018",
+                "journal-title": "Nat Biotechnol"
+            }
+        ],
+        "container-title": [
+            "Bioinformatics"
+        ],
+        "original-title": [],
+        "language": "en",
+        "link": [
+            {
+                "URL": "https://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btaf530/64344542/btaf530.pdf",
+                "content-type": "application/pdf",
+                "content-version": "am",
+                "intended-application": "syndication"
+            },
+            {
+                "URL": "https://academic.oup.com/bioinformatics/article-pdf/41/10/btaf530/64344542/btaf530.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "syndication"
+            },
+            {
+                "URL": "https://academic.oup.com/bioinformatics/article-pdf/41/10/btaf530/64344542/btaf530.pdf",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+            }
+        ],
+        "deposited": {
+            "date-parts": [
+                [
+                    2025,
+                    10,
+                    16
+                ]
+            ],
+            "date-time": "2025-10-16T11:43:34Z",
+            "timestamp": 1760615014000
+        },
+        "score": 1,
+        "resource": {
+            "primary": {
+                "URL": "https://academic.oup.com/bioinformatics/article/doi/10.1093/bioinformatics/btaf530/8261372"
+            }
+        },
+        "subtitle": [],
+        "editor": [
+            {
+                "given": "Christina",
+                "family": "Kendziorski",
+                "sequence": "additional",
+                "affiliation": [],
+                "role": [
+                    {
+                        "role": "editor",
+                        "vocabulary": "crossref"
+                    }
+                ]
+            }
+        ],
+        "short-title": [],
+        "issued": {
+            "date-parts": [
+                [
+                    2025,
+                    9,
+                    22
+                ]
+            ]
+        },
+        "references-count": 29,
+        "journal-issue": {
+            "issue": "10",
+            "published-print": {
+                "date-parts": [
+                    [
+                        2025,
+                        10,
+                        2
+                    ]
+                ]
+            }
+        },
+        "URL": "https://doi.org/10.1093/bioinformatics/btaf530",
+        "relation": {},
+        "ISSN": [
+            "1367-4803",
+            "1367-4811"
+        ],
+        "issn-type": [
+            {
+                "type": "print",
+                "value": "1367-4803"
+            },
+            {
+                "type": "electronic",
+                "value": "1367-4811"
+            }
+        ],
+        "subject": [],
+        "published-other": {
+            "date-parts": [
+                [
+                    2025,
+                    10
+                ]
+            ]
+        },
+        "published": {
+            "date-parts": [
+                [
+                    2025,
+                    9,
+                    22
+                ]
+            ]
+        },
+        "article-number": "btaf530"
+    }
+}

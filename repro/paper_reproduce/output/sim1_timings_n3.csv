@@ -1,0 +1,19 @@
+"eta_setting","rep","method","seconds"
+0.4,1,"Naive Method (ADVI)",19.631
+0.4,1,"Proposed Method (ADVI)",19.397
+0.4,2,"Naive Method (ADVI)",0.226999999999997
+0.4,2,"Proposed Method (ADVI)",0.238999999999997
+0.4,3,"Naive Method (ADVI)",0.200000000000003
+0.4,3,"Proposed Method (ADVI)",0.230000000000004
+1.6,1,"Naive Method (ADVI)",0.215000000000003
+1.6,1,"Proposed Method (ADVI)",0.231000000000009
+1.6,2,"Naive Method (ADVI)",0.199999999999989
+1.6,2,"Proposed Method (ADVI)",0.230000000000004
+1.6,3,"Naive Method (ADVI)",0.216999999999999
+1.6,3,"Proposed Method (ADVI)",0.230000000000004
+2.8,1,"Naive Method (ADVI)",0.215000000000003
+2.8,1,"Proposed Method (ADVI)",0.244
+2.8,2,"Naive Method (ADVI)",0.213999999999999
+2.8,2,"Proposed Method (ADVI)",0.230000000000004
+2.8,3,"Naive Method (ADVI)",0.200999999999993
+2.8,3,"Proposed Method (ADVI)",0.231999999999999

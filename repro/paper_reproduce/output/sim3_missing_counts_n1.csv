@@ -1,0 +1,5 @@
+"setting","kind","rep","missing"
+"10 Missing Spots","ignorable",1,10
+"30 Missing Spots","ignorable",1,30
+"gamma=(-6,1,4)","nonignorable",1,5
+"gamma=(-5,1,1.6)","nonignorable",1,12

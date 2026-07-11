@@ -1,0 +1,48 @@
+== Load 8 patients ==
+  A: 341 spots, 89% cancer
+  B: 269 spots, 23% cancer
+  C: 167 spots, 76% cancer
+  D: 255 spots, 55% cancer
+  E: 534 spots, 64% cancer
+  F: 659 spots, 88% cancer
+  G: 402 spots, 40% cancer
+  H: 530 spots, 35% cancer
+
+3157 spots, 189 common genes -> top 50 HVG (NB), 8 patients, 60% cancer
+
+== Disease-gene discovery (PG-CAVI, all 8 patients) ==
+  fit 3.79s (vs original ADVI ~25h) | eta=3.076 | 26 genes selected @FDR 0.10
+  top 15 disease-associated genes:
+   param  mean std_effect  qvalue
+  PRRC2A -0.29        5.2 4.5e-06
+   PFDN5 -0.29        5.2 4.5e-06
+   TIMP1 -0.27        4.8 2.2e-05
+  COL6A2 -0.27        4.8 2.2e-05
+  RABAC1 -0.25        4.6 3.5e-05
+   HADHA -0.25        4.6 3.5e-05
+    CYBA -0.24        4.2 1.9e-04
+   TCEB2 -0.23        4.1 2.3e-04
+ TMEM219  0.20        3.7 1.2e-03
+   COX5B -0.20        3.6 1.4e-03
+    COPE -0.19        3.4 3.1e-03
+  NDUFA3 -0.19        3.3 3.4e-03
+   ACTN4  0.18        3.2 4.7e-03
+   CIRBP  0.17        3.2 4.7e-03
+ NDUFB11  0.15        2.8 1.6e-02
+
+== eta: pseudolik=3.076  full-likelihood debiased=3.125 ==
+
+== Leave-one-patient-out prediction (calibrated) ==
+ patient accuracy brier   ece
+       A    0.821 0.110 0.166
+       B    0.736 0.170 0.174
+       C    0.683 0.216 0.261
+       D    0.737 0.188 0.153
+       E    0.693 0.233 0.226
+       F    0.824 0.131 0.157
+       G    0.749 0.187 0.113
+       H    0.679 0.208 0.184
+
+mean accuracy=0.740  Brier=0.180  ECE=0.179
+
+DONE: full upgraded pipeline on all 8 HER2+ patients.

@@ -1,0 +1,87 @@
+== btaf530 Supplement A2.2 / Simulation 2 ==
+replicates=1 | six slices | ADVI proposed multiple-slice model
+
+-- sigma2=0.1,rho=0.1 replicate 1/1 (seed=201001) --
+Warning: Pareto k diagnostic value is 1.59. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   proposed multiple-slice ADVI 23.5s
+
+-- sigma2=0.1,rho=0.4 replicate 1/1 (seed=202001) --
+Warning: Pareto k diagnostic value is 1.39. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   proposed multiple-slice ADVI 1.8s
+
+-- sigma2=0.4,rho=0.1 replicate 1/1 (seed=203001) --
+Warning: Pareto k diagnostic value is 1.54. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   proposed multiple-slice ADVI 1.8s
+
+-- sigma2=0.4,rho=0.4 replicate 1/1 (seed=204001) --
+Warning: Pareto k diagnostic value is 1.33. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   proposed multiple-slice ADVI 1.8s
+
+== Simulation 2 outputs ==
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim2_raw_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim2_aggregate_n1.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim2_timings_n1.csv 
+
+Aggregate preview:
+                 method            setting sigma2 rho  param      avgBias
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta1 8.847308e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta2 3.486800e-04
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta3 4.132198e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta4 4.349245e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta5 6.806755e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta6 7.955420e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta7 6.555852e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta8 6.767936e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1  beta9 4.104395e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta10 7.594510e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta11 8.841106e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta12 7.386319e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta13 6.944100e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta14 2.751063e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta15 9.545429e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta16 3.161643e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta17 8.847144e-05
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta18 6.527603e-03
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta19 4.230767e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1 beta20 1.629639e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.1    0.1 0.1    eta 1.106104e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta1 6.241493e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta2 7.275043e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta3 4.615120e-03
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta4 7.850579e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta5 8.370977e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta6 9.079986e-02
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta7 2.123012e-03
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta8 1.163778e-01
+ Proposed Method (ADVI) sigma2=0.1,rho=0.4    0.1 0.4  beta9 2.508674e-02
+ avgSEE     avgSEM avgCI n
+     NA 0.08221540     1 1
+     NA 0.10211691     1 1
+     NA 0.13543272     1 1
+     NA 0.15940331     1 1
+     NA 0.19027238     1 1
+     NA 0.05771239     1 1
+     NA 0.05518045     1 1
+     NA 0.06785630     1 1
+     NA 0.07350058     1 1
+     NA 0.06902784     1 1
+     NA 0.07067258     1 1
+     NA 0.06545879     1 1
+     NA 0.07064564     1 1
+     NA 0.07332430     1 1
+     NA 0.07342754     1 1
+     NA 0.07514709     1 1
+     NA 0.05735095     1 1
+     NA 0.06983005     1 1
+     NA 0.07334165     1 1
+     NA 0.07744339     1 1
+     NA 0.27303278     1 1
+     NA 0.07460749     1 1
+     NA 0.11084055     1 1
+     NA 0.12535238     1 1
+     NA 0.15275678     1 1
+     NA 0.19372664     1 1
+     NA 0.06059796     1 1
+     NA 0.06709866     1 1
+     NA 0.05326941     0 1
+     NA 0.08402396     1 1

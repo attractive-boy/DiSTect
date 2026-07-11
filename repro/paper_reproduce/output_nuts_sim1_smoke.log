@@ -1,0 +1,19 @@
+== Local NUTS check on Sim1 | reps=1 eta=0.4 iter=1500 warmup=750 chains=2 ==
+
+  eta=0.4 rep=1 | 19s | div=67 | eta_hat=0.817 (bias 0.417) | betaBias=0.922
+警告信息:
+1: There were 67 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+2: Examine the pairs() plot to diagnose sampling problems
+ 
+
+Wrote /Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/nuts_sim1_check_n1.csv 
+
+Reference (paper Table C1, eta=0.4):
+  Proposed NUTS : eta bias 0.019, SEE 0.021 ; signal-beta bias ~0.09 (flat)
+  Proposed ADVI : eta bias 0.087, SEE 0.044
+  Local fullrank ADVI (n200): eta bias ~0.231, SEE ~0.245
+
+ eta_true eta_hat eta_absbias eta_sd beta_absbias_mean secs divergences
+      0.4   0.817       0.417  0.325             0.922 19.4          67

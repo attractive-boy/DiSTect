@@ -1,0 +1,70 @@
+Wrote /Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_advi_key_comparison_n200.csv 
+
+ eta_setting                 method param target_avgBias   avgBias
+         0.4    Naive Method (ADVI) beta1          0.401 0.2648278
+         0.4    Naive Method (ADVI) beta2          0.648 1.6154914
+         0.4    Naive Method (ADVI) beta3          1.830 1.6389305
+         0.4    Naive Method (ADVI) beta4          2.274 1.5702100
+         0.4    Naive Method (ADVI) beta5          3.296 2.1363929
+         0.4 Proposed Method (ADVI) beta1          0.332 0.1914204
+         0.4 Proposed Method (ADVI) beta2          0.353 0.3025782
+         0.4 Proposed Method (ADVI) beta3          0.451 0.3942997
+         0.4 Proposed Method (ADVI) beta4          0.445 0.5277523
+         0.4 Proposed Method (ADVI) beta5          0.458 0.6744287
+         0.4 Proposed Method (ADVI)   eta          0.087 0.2314957
+         1.6    Naive Method (ADVI) beta1          0.389 0.2342167
+         1.6    Naive Method (ADVI) beta2          0.689 1.5005440
+         1.6    Naive Method (ADVI) beta3          1.540 1.5011630
+         1.6    Naive Method (ADVI) beta4          2.386 1.4434101
+         1.6    Naive Method (ADVI) beta5          3.982 1.9674393
+         1.6 Proposed Method (ADVI) beta1          0.353 0.1778860
+         1.6 Proposed Method (ADVI) beta2          0.443 0.2670730
+         1.6 Proposed Method (ADVI) beta3          0.355 0.3682047
+         1.6 Proposed Method (ADVI) beta4          0.452 0.5049069
+         1.6 Proposed Method (ADVI) beta5          0.447 0.6109908
+         1.6 Proposed Method (ADVI)   eta          0.083 0.3664402
+         2.8    Naive Method (ADVI) beta1          0.423 0.2838181
+         2.8    Naive Method (ADVI) beta2          0.582 1.6809890
+         2.8    Naive Method (ADVI) beta3          1.673 1.7329074
+         2.8    Naive Method (ADVI) beta4          2.833 1.7212867
+         2.8    Naive Method (ADVI) beta5          3.786 2.3206320
+         2.8 Proposed Method (ADVI) beta1          0.334 0.1785119
+         2.8 Proposed Method (ADVI) beta2          0.467 0.2561315
+         2.8 Proposed Method (ADVI) beta3          0.344 0.3618023
+         2.8 Proposed Method (ADVI) beta4          0.356 0.4744605
+         2.8 Proposed Method (ADVI) beta5          0.556 0.6048418
+         2.8 Proposed Method (ADVI)   eta          0.095 0.4373495
+ delta_avgBias target_avgCI avgCI delta_avgCI
+   -0.13617220        0.950 0.980       0.030
+    0.96749140        0.955 0.295      -0.660
+   -0.19106951        0.945 0.285      -0.660
+   -0.70378998        0.960 0.295      -0.665
+   -1.15960711        0.950 0.290      -0.660
+   -0.14057958        0.955 0.870      -0.085
+   -0.05042184        0.955 0.855      -0.100
+   -0.05670028        0.950 0.895      -0.055
+    0.08275233        0.950 0.850      -0.100
+    0.21642868        0.945 0.800      -0.145
+    0.14449571        0.950 0.875      -0.075
+   -0.15478331        0.955 0.985       0.030
+    0.81154398        0.950 0.345      -0.605
+   -0.03883697        0.940 0.340      -0.600
+   -0.94258992        0.950 0.350      -0.600
+   -2.01456070        0.955 0.350      -0.605
+   -0.17511397        0.935 0.875      -0.060
+   -0.17592702        0.955 0.905      -0.050
+    0.01320467        0.945 0.910      -0.035
+    0.05290694        0.960 0.890      -0.070
+    0.16399077        0.965 0.895      -0.070
+    0.28344017        0.950 0.830      -0.120
+   -0.13918189        0.940 0.905      -0.035
+    1.09898895        0.945 0.170      -0.775
+    0.05990736        0.955 0.095      -0.860
+   -1.11171327        0.970 0.060      -0.910
+   -1.46536803        0.955 0.045      -0.910
+   -0.15548809        0.945 0.875      -0.070
+   -0.21086853        0.965 0.900      -0.065
+    0.01780233        0.955 0.860      -0.095
+    0.11846054        0.940 0.890      -0.050
+    0.04884177        0.940 0.855      -0.085
+    0.34234948        0.955 0.825      -0.130

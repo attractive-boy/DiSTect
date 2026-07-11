@@ -1,0 +1,5 @@
+"setting","sigma2","rho","rep","method","seconds"
+"sigma2=0.1,rho=0.1",0.1,0.1,1,"Proposed Method (ADVI)",23.458
+"sigma2=0.1,rho=0.4",0.1,0.4,1,"Proposed Method (ADVI)",1.793
+"sigma2=0.4,rho=0.1",0.4,0.1,1,"Proposed Method (ADVI)",1.772
+"sigma2=0.4,rho=0.4",0.4,0.4,1,"Proposed Method (ADVI)",1.76

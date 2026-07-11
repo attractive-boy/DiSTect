@@ -1,0 +1,181 @@
+== Confirm covariate-scale explanation | reps=50 eta=0.4 xsd=1,0.5 ==
+
+警告: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 65. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.17. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.42. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 58.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 55.61. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 61.22. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 56.99. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 58.06. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 62.45. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 59.62. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.24. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 54.82. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 64.69. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.21. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 59.16. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 61.16. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 59.08. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.44. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 59.87. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 59.28. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 57.49. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 58.38. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 61.42. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.51. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 60.39. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 61.78. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 52.54. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 56.77. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 58.98. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.85. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.99. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 52.27. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 61.73. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.07. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 53.26. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 64.3. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 57.52. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.96. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 54.04. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.64. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 61.57. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 57.8. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+  xsd=1.00 eta=0.4 done (1.0 min)
+警告: Pareto k diagnostic value is 1. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.15. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 41.83. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.11. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 47.4. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 44.54. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.8. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 47.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 43.7. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.19. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 44.72. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.2. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.12. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.84. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.22. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.86. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 45.49. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.72. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.73. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.74. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.82. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 43.48. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.95. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 45.25. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.93. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.75. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 47.97. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.94. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.3. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.23. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.01. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.27. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.71. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.87. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1.3. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.88. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 48.79. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 1.03. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+警告: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.89. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 1. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.92. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+警告: Pareto k diagnostic value is 0.78. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+  xsd=0.50 eta=0.4 done (1.5 min)
+
+Wrote /Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/confirm_covscale_raw_n50.csv 
+Wrote /Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/confirm_covscale_aggregate_n50.csv 
+
+Paper Table C1 (eta=0.4) targets:
+  Proposed ADVI: b1 bias .332 SEE .055 ; eta bias .087 SEE .044 CI .95
+  Naive ADVI:    b1 bias .401 SEE .019 ; b5 bias 3.296
+
+ xsd          method param avgBias avgSEE avgSEM avgCI
+ 0.5    Naive (ADVI) beta1   0.234  0.282  0.299  0.96
+ 0.5    Naive (ADVI) beta5   1.069  1.480  0.489  0.62
+ 0.5 Proposed (ADVI) beta1   0.244  0.249  0.237  0.96
+ 0.5 Proposed (ADVI) beta5   0.622  0.502  0.457  0.84
+ 0.5 Proposed (ADVI)   eta   0.130  0.178  0.230  0.92
+ 1.0    Naive (ADVI) beta1   0.253  0.254  0.334  0.98
+ 1.0    Naive (ADVI) beta5   1.967  1.654  0.636  0.34
+ 1.0 Proposed (ADVI) beta1   0.181  0.179  0.182  0.88
+ 1.0 Proposed (ADVI) beta5   0.602  0.341  0.493  0.86
+ 1.0 Proposed (ADVI)   eta   0.248  0.266  0.309  0.84

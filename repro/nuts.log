@@ -1,0 +1,108 @@
+
+========== VI (fullrank ADVI) ==========
+Chain 1: ------------------------------------------------------------
+Chain 1: EXPERIMENTAL ALGORITHM:
+Chain 1:   This procedure has not been thoroughly tested and may be unstable
+Chain 1:   or buggy. The interface is subject to change.
+Chain 1: ------------------------------------------------------------
+Chain 1: 
+Chain 1: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.00792 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 79.2 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Begin eta adaptation.
+Chain 1: Iteration:   1 / 250 [  0%]  (Adaptation)
+Chain 1: Iteration:  50 / 250 [ 20%]  (Adaptation)
+Chain 1: Iteration: 100 / 250 [ 40%]  (Adaptation)
+Chain 1: Iteration: 150 / 250 [ 60%]  (Adaptation)
+Chain 1: Iteration: 200 / 250 [ 80%]  (Adaptation)
+Chain 1: Iteration: 250 / 250 [100%]  (Adaptation)
+Chain 1: Success! Found best value [eta = 0.1].
+Chain 1: 
+Chain 1: Begin stochastic gradient ascent.
+Chain 1:   iter             ELBO   delta_ELBO_mean   delta_ELBO_med   notes 
+Chain 1:    100      -187648.407             1.000            1.000
+Chain 1:    200      -187390.397             0.501            1.000
+Chain 1:    300      -187305.355             0.334            0.001
+Chain 1:    400      -187274.348             0.250            0.001
+Chain 1:    500      -187260.340             0.200            0.000
+Chain 1:    600      -187254.045             0.167            0.000
+Chain 1:    700      -187251.827             0.143            0.000
+Chain 1:    800      -187250.218             0.125            0.000
+Chain 1:    900      -187249.011             0.111            0.000
+Chain 1:   1000      -187248.869             0.100            0.000
+Chain 1:   1100      -187249.032             0.000            0.000
+Chain 1:   1200      -187249.197             0.000            0.000
+Chain 1:   1300      -187248.310             0.000            0.000   MEDIAN ELBO CONVERGED
+Chain 1: 
+Chain 1: Drawing a sample of size 1000 from the approximate posterior... 
+Chain 1: COMPLETED.
+VI wall time: 46.5 s
+
+========== NUTS (HMC, iter=800, warmup=400, 2 chains) ==========
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.009244 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 92.44 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.009414 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 94.14 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 2: Iteration:   1 / 800 [  0%]  (Warmup)
+Chain 1: Iteration:   1 / 800 [  0%]  (Warmup)
+Chain 1: Iteration:  80 / 800 [ 10%]  (Warmup)
+Chain 2: Iteration:  80 / 800 [ 10%]  (Warmup)
+Chain 2: Iteration: 160 / 800 [ 20%]  (Warmup)
+Chain 1: Iteration: 160 / 800 [ 20%]  (Warmup)
+Chain 1: Iteration: 240 / 800 [ 30%]  (Warmup)
+Chain 2: Iteration: 240 / 800 [ 30%]  (Warmup)
+Chain 1: Iteration: 320 / 800 [ 40%]  (Warmup)
+Chain 2: Iteration: 320 / 800 [ 40%]  (Warmup)
+Chain 1: Iteration: 400 / 800 [ 50%]  (Warmup)
+Chain 1: Iteration: 401 / 800 [ 50%]  (Sampling)
+Chain 2: Iteration: 400 / 800 [ 50%]  (Warmup)
+Chain 2: Iteration: 401 / 800 [ 50%]  (Sampling)
+Chain 1: Iteration: 480 / 800 [ 60%]  (Sampling)
+Chain 2: Iteration: 480 / 800 [ 60%]  (Sampling)
+Chain 1: Iteration: 560 / 800 [ 70%]  (Sampling)
+Chain 2: Iteration: 560 / 800 [ 70%]  (Sampling)
+Chain 1: Iteration: 640 / 800 [ 80%]  (Sampling)
+Chain 2: Iteration: 640 / 800 [ 80%]  (Sampling)
+Chain 1: Iteration: 720 / 800 [ 90%]  (Sampling)
+Chain 2: Iteration: 720 / 800 [ 90%]  (Sampling)
+Chain 1: Iteration: 800 / 800 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 28.903 seconds (Warm-up)
+Chain 1:                20.886 seconds (Sampling)
+Chain 1:                49.789 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 800 / 800 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 30.165 seconds (Warm-up)
+Chain 2:                23.494 seconds (Sampling)
+Chain 2:                53.659 seconds (Total)
+Chain 2: 
+NUTS wall time: 53.9 s
+
+---- Point estimate / uncertainty comparison ----
+   param VI_mean NUTS_mean VI_sd NUTS_sd NUTS_Rhat NUTS_neff
+ beta[1]   1.147     1.196 0.260   0.247     1.004       598
+ beta[2]   2.044     2.093 0.313   0.293     1.006       485
+ beta[3]   3.606     3.758 0.442   0.471     1.009       429
+     eta   0.029     0.017 0.026   0.015     0.998      1174
+       w   0.773     0.800 0.193   0.165     0.998       755
+
+Speed-up: NUTS is 1.2x slower than VI (53.9s vs 46.5s)
+
+========== NUTS-VI DONE ==========

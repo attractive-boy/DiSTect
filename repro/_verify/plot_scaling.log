@@ -1,0 +1,13 @@
+== scaling.csv ==
+ method      N fit_seconds peak_rss_mb
+ sparse    500        0.21      2272.5
+ sparse   1000        0.27      2263.1
+ sparse   2000        0.40      2258.1
+ sparse   3000        0.53      2317.4
+ sparse  10000        1.51      2209.4
+ sparse  30000        4.29      2240.8
+ sparse 100000       15.87      2294.8
+  dense    500       28.83      2203.5
+  dense   1000      100.14      2230.2
+  dense   2000      369.01      2136.7
+  dense   3000      856.79      2338.7

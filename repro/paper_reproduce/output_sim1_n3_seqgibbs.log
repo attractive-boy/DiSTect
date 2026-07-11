@@ -1,0 +1,122 @@
+== btaf530 Supplement A2.1 / Simulation 1 ==
+replicates=3 | eta=0.4,1.6,2.8 | ADVI=yes | NUTS=FALSE
+Formula: logit(mu_i) = beta'X_i + eta * mean_neighbor_y_i
+
+-- eta 0.4 replicate 1/3 (seed=100401) --
+Warning: Pareto k diagnostic value is 0.7. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   naive ADVI 19.6s
+   proposed ADVI 19.4s
+
+-- eta 0.4 replicate 2/3 (seed=100402) --
+Warning: Pareto k diagnostic value is 60.35. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 0.4 replicate 3/3 (seed=100403) --
+Warning: Pareto k diagnostic value is 0.79. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.97. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 1/3 (seed=101601) --
+Warning: Pareto k diagnostic value is 59.68. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 2/3 (seed=101602) --
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.77. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 1.6 replicate 3/3 (seed=101603) --
+Warning: Pareto k diagnostic value is 64.13. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 1/3 (seed=102801) --
+Warning: Pareto k diagnostic value is 56.85. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.81. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 2/3 (seed=102802) --
+Warning: Pareto k diagnostic value is 52.97. Resampling is disabled. Decreasing tol_rel_obj may help if variational algorithm has terminated prematurely. Otherwise consider using sampling instead.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.91. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+-- eta 2.8 replicate 3/3 (seed=102803) --
+Warning: Pareto k diagnostic value is 0.76. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   naive ADVI 0.2s
+Warning: Pareto k diagnostic value is 0.9. Resampling is unreliable. Increasing the number of draws or decreasing tol_rel_obj may help.
+   proposed ADVI 0.2s
+
+== Simulation 1 outputs ==
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_raw_n3.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_aggregate_n3.csv 
+/Users/licheng/Documents/DiSTect/repro/paper_reproduce/output/sim1_timings_n3.csv 
+
+Aggregate preview:
+                 method eta_setting  param    avgBias     avgSEE    avgSEM
+    Naive Method (ADVI)         0.4  beta1 0.27421751 0.39408695 0.2628868
+    Naive Method (ADVI)         0.4  beta2 0.89469495 1.42766984 0.4017116
+    Naive Method (ADVI)         0.4  beta3 0.99671031 1.51265831 0.4187120
+    Naive Method (ADVI)         0.4  beta4 1.11464320 1.59232122 0.4768205
+    Naive Method (ADVI)         0.4  beta5 1.45034453 2.11091169 0.5611410
+    Naive Method (ADVI)         0.4  beta6 0.45777653 0.52141038 0.3222746
+    Naive Method (ADVI)         0.4  beta7 0.10304306 0.09219764 0.2450274
+    Naive Method (ADVI)         0.4  beta8 0.16196672 0.12323663 0.2509948
+    Naive Method (ADVI)         0.4  beta9 0.28097938 0.42389618 0.3083067
+    Naive Method (ADVI)         0.4 beta10 0.28352211 0.31984354 0.2335201
+    Naive Method (ADVI)         0.4 beta11 0.24905567 0.38375113 0.3137207
+    Naive Method (ADVI)         0.4 beta12 0.13589537 0.17793590 0.2841076
+    Naive Method (ADVI)         0.4 beta13 0.18712297 0.11776236 0.2370081
+    Naive Method (ADVI)         0.4 beta14 0.53808405 0.67128996 0.3347459
+    Naive Method (ADVI)         0.4 beta15 0.39712336 0.60474031 0.3286777
+    Naive Method (ADVI)         0.4 beta16 0.18858321 0.25379595 0.2796607
+    Naive Method (ADVI)         0.4 beta17 0.39747560 0.63531121 0.3222794
+    Naive Method (ADVI)         0.4 beta18 0.14407383 0.05556860 0.2472503
+    Naive Method (ADVI)         0.4 beta19 0.46313132 0.51289093 0.3198485
+    Naive Method (ADVI)         0.4 beta20 0.30082387 0.45699271 0.3163579
+ Proposed Method (ADVI)         0.4  beta1 0.17999896 0.21268696 0.1826417
+ Proposed Method (ADVI)         0.4  beta2 0.27288771 0.06174476 0.2425191
+ Proposed Method (ADVI)         0.4  beta3 0.39751796 0.07028060 0.3204783
+ Proposed Method (ADVI)         0.4  beta4 0.71093011 0.25732662 0.4202392
+ Proposed Method (ADVI)         0.4  beta5 0.85312507 0.28286380 0.5071967
+ Proposed Method (ADVI)         0.4  beta6 0.15290198 0.07062394 0.1704555
+ Proposed Method (ADVI)         0.4  beta7 0.04532414 0.06151556 0.1851883
+ Proposed Method (ADVI)         0.4  beta8 0.17499135 0.09022900 0.1717441
+ Proposed Method (ADVI)         0.4  beta9 0.12509156 0.09121268 0.1808271
+ Proposed Method (ADVI)         0.4 beta10 0.21589394 0.30995224 0.1451106
+     avgCI n
+ 1.0000000 3
+ 0.6666667 3
+ 0.6666667 3
+ 0.3333333 3
+ 0.3333333 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 0.6666667 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 0.6666667 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 0.6666667 3
+ 1.0000000 3
+ 0.6666667 3
+ 1.0000000 3
+ 1.0000000 3
+ 0.6666667 3
+ 0.6666667 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 1.0000000 3
+ 0.6666667 3

@@ -1,0 +1,9 @@
+"algorithm","neighbor_scale","x_mode","n","eta_bias","empirical_sd","mean_posterior_sd","mean_stan_mcse","coverage","mean_seconds"
+"fullrank","average","fixed",1,5.18240257,NA,1.66269022979057,NA,0,0.180999999999997
+"fullrank","average","regenerated",1,0.5991550657,NA,0.682072571830384,NA,1,0.133000000000003
+"fullrank","sum","fixed",1,0.024348966,NA,0.115387685686441,NA,1,0.132999999999999
+"fullrank","sum","regenerated",1,0.06406438,NA,0.0650503135195565,NA,1,0.130000000000003
+"meanfield","average","fixed",1,0.399943085,NA,0.260612889020895,NA,1,20.095
+"meanfield","average","regenerated",1,0.140576805,NA,0.255423952948957,NA,1,0.120999999999999
+"meanfield","sum","fixed",1,0.055966575,NA,0.0729124763837355,NA,1,0.121000000000002
+"meanfield","sum","regenerated",1,0.094738321,NA,0.0661270041287597,NA,1,0.120999999999999

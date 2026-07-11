@@ -1,0 +1,31 @@
+== Sim 2: PG-CAVI scaling ==
+  N=500: 0.37s
+  N=1000: 0.02s
+  N=2000: 0.03s
+  N=3000: 0.05s
+  N=10000: 0.18s
+  N=30000: 0.63s
+  N=100000: 1.98s
+  N=300000: 5.94s
+
+wrote repro/sim/sim2_scaling.csv + fig_sim2_scaling.png
+            method     N fit_seconds
+  sparse-ADVI O(N) 5e+02       0.210
+  sparse-ADVI O(N) 1e+03       0.270
+  sparse-ADVI O(N) 2e+03       0.400
+  sparse-ADVI O(N) 3e+03       0.530
+  sparse-ADVI O(N) 1e+04       1.510
+  sparse-ADVI O(N) 3e+04       4.290
+  sparse-ADVI O(N) 1e+05      15.870
+ dense-ADVI O(N^2) 5e+02      28.830
+ dense-ADVI O(N^2) 1e+03     100.140
+ dense-ADVI O(N^2) 2e+03     369.010
+ dense-ADVI O(N^2) 3e+03     856.790
+           PG-CAVI 5e+02       0.372
+           PG-CAVI 1e+03       0.019
+           PG-CAVI 2e+03       0.029
+           PG-CAVI 3e+03       0.053
+           PG-CAVI 1e+04       0.175
+           PG-CAVI 3e+04       0.630
+           PG-CAVI 1e+05       1.978
+           PG-CAVI 3e+05       5.941
